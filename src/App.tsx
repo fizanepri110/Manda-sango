@@ -24,17 +24,9 @@ import {
   Loader
 } from 'lucide-react';
 
+import { Word, Language } from './types/word';
+
 // --- Types ---
-
-type Language = 'fr' | 'ru';
-
-interface Word {
-  id: number;
-  sango: string;
-  fr: string;
-  ru?: string;
-  categorie?: string;
-}
 
 interface Category {
   id: string;
