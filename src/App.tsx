@@ -68,8 +68,6 @@ async function fetchWordsFromSupabase(): Promise<Word[]> {
       en: item.traduction_en || 'TODO',
       categorie: item.categorie,
       audio_sango: item.audio_sango,
-      audio_fr: item.audio_fr,
-      audio_en: item.audio_en,
     }));
   } catch (error) {
     console.error('Error fetching from Supabase:', error);
@@ -201,12 +199,21 @@ const DEFAULT_VOCABULARY: Category[] = [
 
 // --- Components ---
 
-const AudioButton = ({ url, label }: { url?: string; label: string }) => {
-  if (!url) return null;
+const AudioButton = ({ url, text, langCode }: { url?: string; text?: string; langCode?: string }) => {
+  if (!url && (!text || !langCode)) return null;
   return (
     <button
-      onClick={(e) => { e.stopPropagation(); new Audio(url).play(); }}
-      aria-label={`Écouter ${label}`}
+      onClick={(e) => { 
+        e.stopPropagation(); 
+        if (url) {
+          new Audio(url).play();
+        } else if (text && langCode && 'speechSynthesis' in window) {
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = langCode;
+          window.speechSynthesis.speak(utterance);
+        }
+      }}
+      aria-label="Écouter"
       className="ml-2 hover:opacity-70 text-2xl"
     >
       🔊
@@ -463,7 +470,7 @@ function App() {
           <p className="text-sm text-slate-600 mb-4">Quel est la traduction ?</p>
           <div className="flex items-center justify-center gap-4">
             <p className="text-4xl font-bold text-emerald-600">{word.sango}</p>
-            {currentLang !== 'ru' && <AudioButton url={word.audio_sango} label="Sango" />}
+            <AudioButton url={word.audio_sango} />
           </div>
         </div>
 

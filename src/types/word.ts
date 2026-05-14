@@ -8,6 +8,4 @@ export interface Word {
   en?: string;
   categorie?: string;
   audio_sango?: string;
-  audio_fr?: string;
-  audio_en?: string;
 }
