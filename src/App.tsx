@@ -25,6 +25,7 @@ import {
 } from 'lucide-react';
 
 import { Word, Language } from './types/word';
+import { supabase } from './lib/supabase';
 
 // --- Types ---
 
@@ -48,37 +49,27 @@ interface UserState {
 
 // --- Supabase Client ---
 
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
-const SUPABASE_KEY = import.meta.env.VITE_SUPABASE_KEY;
+const SUPABASE_URL = (import.meta as any).env.VITE_SUPABASE_URL;
+const SUPABASE_KEY = (import.meta as any).env.VITE_SUPABASE_KEY;
 
 async function fetchWordsFromSupabase(): Promise<Word[]> {
-  if (!SUPABASE_URL || !SUPABASE_KEY) {
-    console.warn('Supabase credentials not configured, using fallback data');
-    return [];
-  }
+  if (!supabase) return [];
 
   try {
-    const response = await fetch(
-      `${SUPABASE_URL}/rest/v1/mots-sango?select=*`,
-      {
-        headers: {
-          'apikey': SUPABASE_KEY,
-          'Content-Type': 'application/json',
-        },
-      }
-    );
-
-    if (!response.ok) {
-      throw new Error(`Supabase error: ${response.status}`);
-    }
-
-    const data = await response.json();
+    const { data, error } = await supabase.from('mots-sango').select('*');
+    if (error) throw error;
+    if (!data) return [];
+    
     return data.map((item: any) => ({
       id: item.id,
       sango: item.mot_sango,
       fr: item.traduction_fr,
       ru: item.traduction_ru || '',
+      en: item.traduction_en || 'TODO',
       categorie: item.categorie,
+      audio_sango: item.audio_sango,
+      audio_fr: item.audio_fr,
+      audio_en: item.audio_en,
     }));
   } catch (error) {
     console.error('Error fetching from Supabase:', error);
@@ -96,16 +87,16 @@ const DEFAULT_VOCABULARY: Category[] = [
     color: 'bg-blue-600',
     borderColor: 'border-blue-800',
     words: [
-      { id: 1, fr: 'Bonjour / Salut', sango: 'Bara mo / Balaô', ru: 'Привет / Здравствуйте', categorie: 'Salutations et Politesse' },
-      { id: 2, fr: 'Bienvenue', sango: 'Nzoni gango', ru: 'Добро пожаловать', categorie: 'Salutations et Politesse' },
-      { id: 3, fr: 'Comment vas-tu ?', sango: 'Töngana nye?', ru: 'Как дела?', categorie: 'Salutations et Politesse' },
-      { id: 4, fr: 'Je vais bien', sango: 'Mbï yeke sêngê', ru: 'У меня все хорошо', categorie: 'Salutations et Politesse' },
-      { id: 5, fr: 'Merci', sango: 'Singîla', ru: 'Спасибо', categorie: 'Salutations et Politesse' },
-      { id: 6, fr: 'Merci beaucoup', sango: 'Singîla mingi', ru: 'Большое спасибо', categorie: 'Salutations et Politesse' },
-      { id: 7, fr: 'De rien', sango: 'Asala ye ape', ru: 'Не за что', categorie: 'Salutations et Politesse' },
-      { id: 8, fr: "S'il te plaît", sango: 'Mbi gbu gere ti mo', ru: 'Пожалуйста', categorie: 'Salutations et Politesse' },
-      { id: 9, fr: 'Excusez-moi / Pardon', sango: 'Gbu gere ti ala', ru: 'Извините', categorie: 'Salutations et Politesse' },
-      { id: 10, fr: 'Bonne nuit', sango: 'Lango Njönî', ru: 'Спокойной ночи', categorie: 'Salutations et Politesse' },
+      { id: 1, fr: 'Bonjour / Salut', sango: 'Bara mo / Balaô', ru: 'Привет / Здравствуйте', en: 'TODO', categorie: 'Salutations et Politesse' },
+      { id: 2, fr: 'Bienvenue', sango: 'Nzoni gango', ru: 'Добро пожаловать', en: 'TODO', categorie: 'Salutations et Politesse' },
+      { id: 3, fr: 'Comment vas-tu ?', sango: 'Töngana nye?', ru: 'Как дела?', en: 'TODO', categorie: 'Salutations et Politesse' },
+      { id: 4, fr: 'Je vais bien', sango: 'Mbï yeke sêngê', ru: 'У меня все хорошо', en: 'TODO', categorie: 'Salutations et Politesse' },
+      { id: 5, fr: 'Merci', sango: 'Singîla', ru: 'Спасибо', en: 'TODO', categorie: 'Salutations et Politesse' },
+      { id: 6, fr: 'Merci beaucoup', sango: 'Singîla mingi', ru: 'Большое спасибо', en: 'TODO', categorie: 'Salutations et Politesse' },
+      { id: 7, fr: 'De rien', sango: 'Asala ye ape', ru: 'Не за что', en: 'TODO', categorie: 'Salutations et Politesse' },
+      { id: 8, fr: "S'il te plaît", sango: 'Mbi gbu gere ti mo', ru: 'Пожалуйста', en: 'TODO', categorie: 'Salutations et Politesse' },
+      { id: 9, fr: 'Excusez-moi / Pardon', sango: 'Gbu gere ti ala', ru: 'Извините', en: 'TODO', categorie: 'Salutations et Politesse' },
+      { id: 10, fr: 'Bonne nuit', sango: 'Lango Njönî', ru: 'Спокойной ночи', en: 'TODO', categorie: 'Salutations et Politesse' },
     ]
   },
   {
@@ -115,11 +106,11 @@ const DEFAULT_VOCABULARY: Category[] = [
     color: 'bg-yellow-400',
     borderColor: 'border-yellow-600',
     words: [
-      { id: 11, fr: 'Qui ?', sango: 'Sô Zua ?', ru: 'Кто?', categorie: 'Questions' },
-      { id: 12, fr: 'Quoi ?', sango: 'Nye ?', ru: 'Что?', categorie: 'Questions' },
-      { id: 13, fr: 'Quand ?', sango: 'Lâ wa ?', ru: 'Когда?', categorie: 'Questions' },
-      { id: 14, fr: 'Où ?', sango: 'Na ndo wa ?', ru: 'Где?', categorie: 'Questions' },
-      { id: 15, fr: 'Pourquoi ?', sango: 'Ndâli ni nye ?', ru: 'Почему?', categorie: 'Questions' },
+      { id: 11, fr: 'Qui ?', sango: 'Sô Zua ?', ru: 'Кто?', en: 'TODO', categorie: 'Questions' },
+      { id: 12, fr: 'Quoi ?', sango: 'Nye ?', ru: 'Что?', en: 'TODO', categorie: 'Questions' },
+      { id: 13, fr: 'Quand ?', sango: 'Lâ wa ?', ru: 'Когда?', en: 'TODO', categorie: 'Questions' },
+      { id: 14, fr: 'Où ?', sango: 'Na ndo wa ?', ru: 'Где?', en: 'TODO', categorie: 'Questions' },
+      { id: 15, fr: 'Pourquoi ?', sango: 'Ndâli ni nye ?', ru: 'Почему?', en: 'TODO', categorie: 'Questions' },
     ]
   },
   {
@@ -129,11 +120,11 @@ const DEFAULT_VOCABULARY: Category[] = [
     color: 'bg-blue-700',
     borderColor: 'border-blue-900',
     words: [
-      { id: 16, fr: 'Quel est ton nom ?', sango: 'Ïrï tî mo nye?', ru: 'Как тебя зовут?', categorie: 'Gens' },
-      { id: 17, fr: 'Mon nom est...', sango: 'Irï tî mbï...', ru: 'Меня зовут...', categorie: 'Gens' },
-      { id: 18, fr: 'Homme', sango: 'Kôlï', ru: 'Мужчина', categorie: 'Gens' },
-      { id: 19, fr: 'Femme', sango: 'Wâlï', ru: 'Женщина', categorie: 'Gens' },
-      { id: 20, fr: 'Enfant', sango: 'Môlengê', ru: 'Ребенок', categorie: 'Gens' },
+      { id: 16, fr: 'Quel est ton nom ?', sango: 'Ïrï tî mo nye?', ru: 'Как тебя зовут?', en: 'TODO', categorie: 'Gens' },
+      { id: 17, fr: 'Mon nom est...', sango: 'Irï tî mbï...', ru: 'Меня зовут...', en: 'TODO', categorie: 'Gens' },
+      { id: 18, fr: 'Homme', sango: 'Kôlï', ru: 'Мужчина', en: 'TODO', categorie: 'Gens' },
+      { id: 19, fr: 'Femme', sango: 'Wâlï', ru: 'Женщина', en: 'TODO', categorie: 'Gens' },
+      { id: 20, fr: 'Enfant', sango: 'Môlengê', ru: 'Ребенок', en: 'TODO', categorie: 'Gens' },
     ]
   },
   {
@@ -143,11 +134,11 @@ const DEFAULT_VOCABULARY: Category[] = [
     color: 'bg-green-600',
     borderColor: 'border-green-800',
     words: [
-      { id: 21, fr: 'Un', sango: 'Ôko', ru: 'Один', categorie: 'Nombres' },
-      { id: 22, fr: 'Deux', sango: 'Üse', ru: 'Два', categorie: 'Nombres' },
-      { id: 23, fr: 'Trois', sango: 'Otâ', ru: 'Три', categorie: 'Nombres' },
-      { id: 24, fr: 'Quatre', sango: 'Osiô', ru: 'Четыре', categorie: 'Nombres' },
-      { id: 25, fr: 'Cinq', sango: 'Okuë', ru: 'Пять', categorie: 'Nombres' },
+      { id: 21, fr: 'Un', sango: 'Ôko', ru: 'Один', en: 'TODO', categorie: 'Nombres' },
+      { id: 22, fr: 'Deux', sango: 'Üse', ru: 'Два', en: 'TODO', categorie: 'Nombres' },
+      { id: 23, fr: 'Trois', sango: 'Otâ', ru: 'Три', en: 'TODO', categorie: 'Nombres' },
+      { id: 24, fr: 'Quatre', sango: 'Osiô', ru: 'Четыре', en: 'TODO', categorie: 'Nombres' },
+      { id: 25, fr: 'Cinq', sango: 'Okuë', ru: 'Пять', en: 'TODO', categorie: 'Nombres' },
     ]
   },
   {
@@ -157,11 +148,11 @@ const DEFAULT_VOCABULARY: Category[] = [
     color: 'bg-white',
     borderColor: 'border-slate-300',
     words: [
-      { id: 26, fr: 'Noir', sango: 'Vûko', ru: 'Черный', categorie: 'Temps et Couleurs' },
-      { id: 27, fr: 'Blanc', sango: 'Vuru', ru: 'Белый', categorie: 'Temps et Couleurs' },
-      { id: 28, fr: 'Rouge', sango: 'Bengba', ru: 'Красный', categorie: 'Temps et Couleurs' },
-      { id: 29, fr: 'Vert', sango: 'Ngu ngunza', ru: 'Зеленый', categorie: 'Temps et Couleurs' },
-      { id: 30, fr: 'Jaune', sango: 'Kambiri', ru: 'Желтый', categorie: 'Temps et Couleurs' },
+      { id: 26, fr: 'Noir', sango: 'Vûko', ru: 'Черный', en: 'TODO', categorie: 'Temps et Couleurs' },
+      { id: 27, fr: 'Blanc', sango: 'Vuru', ru: 'Белый', en: 'TODO', categorie: 'Temps et Couleurs' },
+      { id: 28, fr: 'Rouge', sango: 'Bengba', ru: 'Красный', en: 'TODO', categorie: 'Temps et Couleurs' },
+      { id: 29, fr: 'Vert', sango: 'Ngu ngunza', ru: 'Зеленый', en: 'TODO', categorie: 'Temps et Couleurs' },
+      { id: 30, fr: 'Jaune', sango: 'Kambiri', ru: 'Желтый', en: 'TODO', categorie: 'Temps et Couleurs' },
     ]
   },
   {
@@ -171,11 +162,11 @@ const DEFAULT_VOCABULARY: Category[] = [
     color: 'bg-yellow-500',
     borderColor: 'border-yellow-700',
     words: [
-      { id: 31, fr: 'Nourriture', sango: 'Kôbe', ru: 'Еда', categorie: 'Marché et Nourriture' },
-      { id: 32, fr: 'Eau', sango: 'Ngû', ru: 'Вода', categorie: 'Marché et Nourriture' },
-      { id: 33, fr: 'Pain', sango: 'Mapa', ru: 'Хлеб', categorie: 'Marché et Nourriture' },
-      { id: 34, fr: 'Riz', sango: 'Lôssô', ru: 'Рис', categorie: 'Marché et Nourriture' },
-      { id: 35, fr: 'Viande', sango: 'Nyama', ru: 'Мясо', categorie: 'Marché et Nourriture' },
+      { id: 31, fr: 'Nourriture', sango: 'Kôbe', ru: 'Еда', en: 'TODO', categorie: 'Marché et Nourriture' },
+      { id: 32, fr: 'Eau', sango: 'Ngû', ru: 'Вода', en: 'TODO', categorie: 'Marché et Nourriture' },
+      { id: 33, fr: 'Pain', sango: 'Mapa', ru: 'Хлеб', en: 'TODO', categorie: 'Marché et Nourriture' },
+      { id: 34, fr: 'Riz', sango: 'Lôssô', ru: 'Рис', en: 'TODO', categorie: 'Marché et Nourriture' },
+      { id: 35, fr: 'Viande', sango: 'Nyama', ru: 'Мясо', en: 'TODO', categorie: 'Marché et Nourriture' },
     ]
   },
   {
@@ -185,11 +176,11 @@ const DEFAULT_VOCABULARY: Category[] = [
     color: 'bg-red-500',
     borderColor: 'border-red-700',
     words: [
-      { id: 36, fr: 'Être', sango: 'Yeke', ru: 'Быть', categorie: 'Verbes' },
-      { id: 37, fr: 'Avoir', sango: 'Yekena', ru: 'Иметь', categorie: 'Verbes' },
-      { id: 38, fr: 'Aller', sango: 'Ti gwe', ru: 'Идти', categorie: 'Verbes' },
-      { id: 39, fr: 'Venir', sango: 'Ga', ru: 'Приходить', categorie: 'Verbes' },
-      { id: 40, fr: 'Faire', sango: 'Sala', ru: 'Делать', categorie: 'Verbes' },
+      { id: 36, fr: 'Être', sango: 'Yeke', ru: 'Быть', en: 'TODO', categorie: 'Verbes' },
+      { id: 37, fr: 'Avoir', sango: 'Yekena', ru: 'Иметь', en: 'TODO', categorie: 'Verbes' },
+      { id: 38, fr: 'Aller', sango: 'Ti gwe', ru: 'Идти', en: 'TODO', categorie: 'Verbes' },
+      { id: 39, fr: 'Venir', sango: 'Ga', ru: 'Приходить', en: 'TODO', categorie: 'Verbes' },
+      { id: 40, fr: 'Faire', sango: 'Sala', ru: 'Делать', en: 'TODO', categorie: 'Verbes' },
     ]
   },
   {
@@ -199,16 +190,30 @@ const DEFAULT_VOCABULARY: Category[] = [
     color: 'bg-red-600',
     borderColor: 'border-red-800',
     words: [
-      { id: 41, fr: 'Bon / Bien', sango: 'Nzoni', ru: 'Хороший', categorie: 'Adjectifs' },
-      { id: 42, fr: 'Mauvais', sango: 'Sioni', ru: 'Плохой', categorie: 'Adjectifs' },
-      { id: 43, fr: 'Grand', sango: 'Kota', ru: 'Большой', categorie: 'Adjectifs' },
-      { id: 44, fr: 'Petit', sango: 'Kete', ru: 'Маленький', categorie: 'Adjectifs' },
-      { id: 45, fr: 'Beau / Joli', sango: 'Pendere', ru: 'Красивый', categorie: 'Adjectifs' },
+      { id: 41, fr: 'Bon / Bien', sango: 'Nzoni', ru: 'Хороший', en: 'TODO', categorie: 'Adjectifs' },
+      { id: 42, fr: 'Mauvais', sango: 'Sioni', ru: 'Плохой', en: 'TODO', categorie: 'Adjectifs' },
+      { id: 43, fr: 'Grand', sango: 'Kota', ru: 'Большой', en: 'TODO', categorie: 'Adjectifs' },
+      { id: 44, fr: 'Petit', sango: 'Kete', ru: 'Маленький', en: 'TODO', categorie: 'Adjectifs' },
+      { id: 45, fr: 'Beau / Joli', sango: 'Pendere', ru: 'Красивый', en: 'TODO', categorie: 'Adjectifs' },
     ]
   }
 ];
 
 // --- Components ---
+
+const AudioButton = ({ url, label }: { url?: string; label: string }) => {
+  if (!url) return null;
+  return (
+    <button
+      onClick={(e) => { e.stopPropagation(); new Audio(url).play(); }}
+      aria-label={`Écouter ${label}`}
+      className="ml-2 hover:opacity-70 text-2xl"
+    >
+      🔊
+    </button>
+  );
+};
+
 
 function Header({ userState, currentLang, setLang, goHome }: any) {
   return (
@@ -242,6 +247,7 @@ function Header({ userState, currentLang, setLang, goHome }: any) {
           >
             <option value="fr">🇫🇷 Français</option>
             <option value="ru">🇷🇺 Русский</option>
+            <option value="en">🇬🇧 English</option>
           </select>
         </div>
       </div>
@@ -455,14 +461,17 @@ function App() {
 
         <div className="bg-slate-100 rounded-lg p-8 mb-8 text-center">
           <p className="text-sm text-slate-600 mb-4">Quel est la traduction ?</p>
-          <p className="text-4xl font-bold text-emerald-600">{word.sango}</p>
+          <div className="flex items-center justify-center gap-4">
+            <p className="text-4xl font-bold text-emerald-600">{word.sango}</p>
+            {currentLang !== 'ru' && <AudioButton url={word.audio_sango} label="Sango" />}
+          </div>
         </div>
 
         <div className="grid grid-cols-1 gap-4">
           {options.map((option, idx) => (
             <button
               key={idx}
-              onClick={() => handleAnswer(option)}
+              onClick={() => handleAnswer(option as string)}
               className="p-4 bg-white border-2 border-slate-200 rounded-lg hover:border-emerald-600 hover:bg-emerald-50 transition text-lg font-semibold"
             >
               {option}
