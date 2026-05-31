@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+
 import { 
   Heart, 
   Zap, 
@@ -415,6 +416,9 @@ function App() {
     return (
       <div className="max-w-2xl mx-auto px-4 py-16 text-center">
         <div className="bg-red-50 border-2 border-red-300 rounded-lg p-12">
+          <div className="flex justify-center mb-6">
+            <img src="/mascotte.png" alt="Mascotte Manda Sango" className="h-24 w-24 opacity-75" />
+          </div>
           <Heart size={64} className="mx-auto mb-4 text-red-500" />
           <h2 className="text-3xl font-bold mb-4 text-red-700">Pas de vies restantes</h2>
           <p className="text-lg text-slate-700 mb-6">
@@ -439,6 +443,9 @@ function App() {
     return (
       <div className="max-w-6xl mx-auto px-4 py-8">
         <div className="text-center mb-12">
+          <div className="flex justify-center mb-8">
+            <img src="/mascotte.png" alt="Mascotte Manda Sango" className="h-32 w-32 drop-shadow-lg" />
+          </div>
           <h2 className="text-4xl font-bold mb-4">Bienvenue dans Mada-Sango</h2>
           <p className="text-xl text-slate-600">Apprenez le Sango, la langue de la République Centrafricaine</p>
         </div>
