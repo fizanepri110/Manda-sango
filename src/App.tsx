@@ -201,20 +201,37 @@ const DEFAULT_VOCABULARY: Category[] = [
 
 const AudioButton = ({ url, text, langCode }: { url?: string; text?: string; langCode?: string }) => {
   if (!url && (!text || !langCode)) return null;
+  
+  const handleAudio = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    
+    if (url) {
+      const audio = new Audio(url);
+      audio.play().catch(err => console.error('Erreur lecture audio:', err));
+    } else if (text && langCode && 'speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      
+      // Map language codes to Web Speech API locale codes
+      const langMap: { [key: string]: string } = {
+        'fr': 'fr-FR',
+        'en': 'en-US',
+        'ru': 'ru-RU',
+        'sango': 'fr-FR'
+      };
+      
+      utterance.lang = langMap[langCode] || langCode;
+      utterance.rate = 0.9;
+      window.speechSynthesis.speak(utterance);
+    }
+  };
+  
   return (
     <button
-      onClick={(e) => { 
-        e.stopPropagation(); 
-        if (url) {
-          new Audio(url).play();
-        } else if (text && langCode && 'speechSynthesis' in window) {
-          const utterance = new SpeechSynthesisUtterance(text);
-          utterance.lang = langCode;
-          window.speechSynthesis.speak(utterance);
-        }
-      }}
+      onClick={handleAudio}
       aria-label="Écouter"
-      className="ml-2 hover:opacity-70 text-2xl"
+      className="ml-2 hover:opacity-70 transition-opacity text-2xl"
+      title="Cliquez pour écouter"
     >
       🔊
     </button>
@@ -401,11 +418,35 @@ function App() {
         >
           <div>
             <p className="text-sm opacity-75 mb-4">{isFlipped ? 'Traduction' : 'Sango'}</p>
-            <p className="text-5xl font-bold">
-              {isFlipped ? word[currentLang as keyof Word] || word.sango : word.sango}
-            </p>
+            <div className="flex items-center justify-center gap-4">
+              <p className="text-5xl font-bold">
+                {isFlipped ? word[currentLang as keyof Word] || word.sango : word.sango}
+              </p>
+              <AudioButton 
+                url={!isFlipped ? word.audio_sango : undefined}
+                text={isFlipped ? (word[currentLang as keyof Word] || word.sango) : undefined}
+                langCode={isFlipped ? currentLang : 'sango'}
+              />
+            </div>
           </div>
         </div>
+        
+        {!isFlipped && (
+          <div className="mt-8 flex gap-2 justify-center flex-wrap">
+            <p className="w-full text-center text-sm text-slate-600 mb-2">Traductions audio :</p>
+            <div className="flex gap-2">
+              <button className="flex items-center gap-1 px-3 py-2 bg-blue-100 text-blue-700 rounded font-semibold">
+                🇫🇷 FR <AudioButton text={word.fr} langCode="fr" />
+              </button>
+              <button className="flex items-center gap-1 px-3 py-2 bg-red-100 text-red-700 rounded font-semibold">
+                🇷🇺 RU <AudioButton text={word.ru} langCode="ru" />
+              </button>
+              <button className="flex items-center gap-1 px-3 py-2 bg-green-100 text-green-700 rounded font-semibold">
+                🇬🇧 EN <AudioButton text={word.en} langCode="en" />
+              </button>
+            </div>
+          </div>
+        )}
 
         <div className="flex gap-4 mt-8 justify-center">
           <button
