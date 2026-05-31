@@ -199,6 +199,36 @@ const DEFAULT_VOCABULARY: Category[] = [
 
 // --- Components ---
 
+// Central African Republic Flag SVG
+const CARFlag = ({ size = 24 }: { size?: number }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 900 600"
+    xmlns="http://www.w3.org/2000/svg"
+    style={{ display: 'inline-block' }}
+  >
+    {/* Horizontal stripes */}
+    <rect width="900" height="100" fill="#0052CC" /> {/* Blue */}
+    <rect y="100" width="900" height="100" fill="#00A651" /> {/* Green */}
+    <rect y="200" width="900" height="100" fill="#FFCD00" /> {/* Yellow */}
+    <rect y="300" width="900" height="100" fill="#FFFFFF" /> {/* White */}
+    <rect y="400" width="900" height="100" fill="#CE1126" /> {/* Red */}
+    <rect y="500" width="900" height="100" fill="#CE1126" /> {/* Red */}
+    
+    {/* Vertical red band */}
+    <rect width="180" height="600" fill="#CE1126" />
+    
+    {/* Yellow star in center */}
+    <g transform="translate(450, 300)">
+      <polygon
+        points="0,-40 12,-12 40,-12 20,8 28,40 0,20 -28,40 -20,8 -40,-12 -12,-12"
+        fill="#FFCD00"
+      />
+    </g>
+  </svg>
+);
+
 const AudioButton = ({ url, text, langCode }: { url?: string; text?: string; langCode?: string }) => {
   if (!url && (!text || !langCode)) return null;
   
@@ -267,12 +297,17 @@ function Header({ userState, currentLang, setLang, goHome }: any) {
           <select 
             value={currentLang}
             onChange={(e) => setLang(e.target.value as Language)}
-            className="bg-white/20 text-white rounded px-3 py-2 font-semibold cursor-pointer"
+            className="bg-white/20 text-white rounded px-3 py-2 font-semibold cursor-pointer flex items-center gap-2"
           >
             <option value="fr">🇫🇷 Français</option>
             <option value="ru">🇷🇺 Русский</option>
             <option value="en">🇬🇧 English</option>
           </select>
+          
+          <div className="flex items-center gap-2 text-white" title="Drapeau de la République Centrafricaine">
+            <CARFlag size={28} />
+            <span className="text-sm font-semibold">RCA</span>
+          </div>
         </div>
       </div>
     </header>
