@@ -45,6 +45,32 @@ interface UserState {
   xp: number;
   streak: number;
   completedCategories: string[];
+  lastHeartResetDate?: string;
+}
+
+const HEARTS_PER_SESSION = 3;
+const HEARTS_STORAGE_KEY = 'manda-sango-hearts';
+const HEARTS_RESET_DATE_KEY = 'manda-sango-hearts-reset-date';
+
+// Helper: Get hearts from localStorage with daily reset
+function getHeartsFromStorage(): { hearts: number; lastResetDate: string } {
+  const today = new Date().toISOString().split('T')[0];
+  const stored = localStorage.getItem(HEARTS_STORAGE_KEY);
+  const storedDate = localStorage.getItem(HEARTS_RESET_DATE_KEY);
+  
+  if (storedDate === today && stored !== null) {
+    return { hearts: parseInt(stored, 10), lastResetDate: storedDate };
+  }
+  
+  // Reset for new day
+  localStorage.setItem(HEARTS_STORAGE_KEY, String(HEARTS_PER_SESSION));
+  localStorage.setItem(HEARTS_RESET_DATE_KEY, today);
+  return { hearts: HEARTS_PER_SESSION, lastResetDate: today };
+}
+
+// Helper: Save hearts to localStorage
+function saveHeartsToStorage(hearts: number): void {
+  localStorage.setItem(HEARTS_STORAGE_KEY, String(hearts));
 }
 
 // --- Supabase Client ---
@@ -318,7 +344,7 @@ function App() {
   const [screen, setScreen] = useState<Screen>('home');
   const [currentLang, setCurrentLang] = useState<Language>('fr');
   const [userState, setUserState] = useState<UserState>({
-    hearts: 5,
+    hearts: HEARTS_PER_SESSION,
     xp: 0,
     streak: 0,
     completedCategories: [],
@@ -328,10 +354,15 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
-  // Load data from Supabase or use fallback
+  // Load data from Supabase or use fallback + Load hearts from localStorage
   useEffect(() => {
     const loadData = async () => {
       setLoading(true);
+      
+      // Load hearts from localStorage
+      const { hearts } = getHeartsFromStorage();
+      setUserState(prev => ({ ...prev, hearts }));
+      
       const words = await fetchWordsFromSupabase();
       
       if (words.length > 0) {
@@ -374,6 +405,34 @@ function App() {
       </div>
     );
   }
+
+  // Blocked Screen (no hearts left)
+  const renderBlockedScreen = () => {
+    const today = new Date().toISOString().split('T')[0];
+    const tomorrow = new Date(new Date().getTime() + 24 * 60 * 60 * 1000)
+      .toLocaleString('fr-FR', { weekday: 'long', month: 'long', day: 'numeric' });
+    
+    return (
+      <div className="max-w-2xl mx-auto px-4 py-16 text-center">
+        <div className="bg-red-50 border-2 border-red-300 rounded-lg p-12">
+          <Heart size={64} className="mx-auto mb-4 text-red-500" />
+          <h2 className="text-3xl font-bold mb-4 text-red-700">Pas de vies restantes</h2>
+          <p className="text-lg text-slate-700 mb-6">
+            Reviens demain pour recharger tes vies et continuer l'apprentissage du Sango!
+          </p>
+          <p className="text-sm text-slate-600 mb-8">
+            Prochaine recharge : <strong>{tomorrow}</strong>
+          </p>
+          <button
+            onClick={() => setScreen('home')}
+            className="px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-700 transition"
+          >
+            Retour à l'accueil
+          </button>
+        </div>
+      </div>
+    );
+  };
 
   // Home Screen
   const renderHomeScreen = () => {
@@ -518,9 +577,23 @@ function App() {
     ].sort(() => Math.random() - 0.5);
 
     const handleAnswer = (selected: string) => {
-      if (selected === (word[currentLang as keyof Word] || word.sango)) {
+      const isCorrect = selected === (word[currentLang as keyof Word] || word.sango);
+      
+      if (isCorrect) {
         setScore(score + 1);
+      } else {
+        // Lose a heart
+        const newHearts = Math.max(0, userState.hearts - 1);
+        setUserState(prev => ({ ...prev, hearts: newHearts }));
+        saveHeartsToStorage(newHearts);
+        
+        // If no hearts left, block the quiz
+        if (newHearts === 0) {
+          setTimeout(() => setScreen('home'), 1000);
+          return;
+        }
       }
+      
       if (currentIndex < category.words.length - 1) {
         setCurrentIndex(currentIndex + 1);
       } else {
@@ -594,9 +667,11 @@ function App() {
       )}
       
       <main className="mx-auto">
-        {screen === 'home' && renderHomeScreen()}
+        {screen === 'home' && userState.hearts === 0 && renderBlockedScreen()}
+        {screen === 'home' && userState.hearts > 0 && renderHomeScreen()}
         {screen === 'flashcards' && renderFlashcards()}
-        {screen === 'quiz' && renderQuiz()}
+        {screen === 'quiz' && userState.hearts > 0 && renderQuiz()}
+        {screen === 'quiz' && userState.hearts === 0 && renderBlockedScreen()}
         {screen === 'duel' && renderDuel()}
       </main>
     </div>
