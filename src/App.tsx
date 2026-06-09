@@ -39,7 +39,7 @@ interface Category {
   words: Word[];
 }
 
-type Screen = 'home' | 'flashcards' | 'quiz' | 'duel';
+type Screen = 'home' | 'flashcards' | 'quiz' | 'duel' | 'fierte';
 
 interface UserState {
   hearts: number;
@@ -89,10 +89,10 @@ async function fetchWordsFromSupabase(): Promise<Word[]> {
     
     return data.map((item: any) => ({
       id: item.id,
-      sango: item.mot_sango,
-      fr: item.traduction_fr,
-      ru: item.traduction_ru || '',
-      en: item.traduction_en || 'TODO',
+      sango: item.sango,
+      fr: item['français'],
+      ru: item.russe || '',
+      en: item.anglais || 'TODO',
       categorie: item.categorie,
       audio_sango: item.audio_sango,
     }));
@@ -256,33 +256,93 @@ const CARFlag = ({ size = 24 }: { size?: number }) => (
   </svg>
 );
 
+// Map language codes to Web Speech API locale codes
+const LANG_MAP: { [key: string]: string } = {
+  fr: 'fr-FR',
+  en: 'en-US',
+  ru: 'ru-RU',
+  sango: 'fr-FR',
+};
+
+// Robust browser text-to-speech:
+// - waits for voices to load (they arrive asynchronously; the first call is often empty)
+// - picks a voice matching the target language
+// - warns clearly if no matching voice is installed on the device
+function speakWithVoice(text: string, langCode: string) {
+  if (!('speechSynthesis' in window)) {
+    alert("La synthèse vocale n'est pas disponible dans ce navigateur.");
+    return;
+  }
+
+  const target = (LANG_MAP[langCode] || langCode).toLowerCase();
+  const prefix = target.split('-')[0]; // e.g. "ru"
+  const synth = window.speechSynthesis;
+
+  const speak = () => {
+    const voices = synth.getVoices();
+    const voice = voices.find(v => v.lang.toLowerCase().startsWith(prefix));
+    if (!voice) {
+      alert(`La voix « ${langCode.toUpperCase()} » n'est pas installée sur cet appareil, le mot ne peut pas être lu à voix haute.`);
+      return;
+    }
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.voice = voice;
+    utterance.lang = voice.lang;
+    utterance.rate = 0.9;
+    synth.cancel();
+    synth.speak(utterance);
+  };
+
+  // If the voice list isn't ready yet, wait for the browser to load it once.
+  if (synth.getVoices().length === 0) {
+    synth.addEventListener('voiceschanged', speak, { once: true });
+    synth.getVoices(); // kick off the asynchronous load
+  } else {
+    speak();
+  }
+}
+
+// A translation audio chip (FR / RU / EN). Shows a 🔊 button when a translation
+// exists, or a clear "indisponible" label when the translation is missing.
+const LangAudio = ({ flag, label, text, langCode, color }: { flag: string; label: string; text?: string; langCode: string; color: string }) => {
+  const hasText = !!(text && text.trim() && text.trim().toUpperCase() !== 'TODO');
+
+  if (!hasText) {
+    return (
+      <span
+        className="flex items-center gap-1 px-3 py-2 bg-slate-100 text-slate-400 rounded font-semibold cursor-not-allowed"
+        title={`Traduction ${label} indisponible pour ce mot`}
+      >
+        {flag} {label} <span className="text-xs">(indisponible)</span>
+      </span>
+    );
+  }
+
+  return (
+    <button
+      onClick={() => speakWithVoice(text as string, langCode)}
+      className={`flex items-center gap-1 px-3 py-2 ${color} rounded font-semibold`}
+      title="Cliquez pour écouter"
+    >
+      {flag} {label} 🔊
+    </button>
+  );
+};
+
 const AudioButton = ({ url, text, langCode }: { url?: string; text?: string; langCode?: string }) => {
   if (!url && (!text || !langCode)) return null;
-  
+
   const handleAudio = (e: React.MouseEvent) => {
     e.stopPropagation();
-    
+
     if (url) {
       const audio = new Audio(url);
       audio.play().catch(err => console.error('Erreur lecture audio:', err));
-    } else if (text && langCode && 'speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(text);
-      
-      // Map language codes to Web Speech API locale codes
-      const langMap: { [key: string]: string } = {
-        'fr': 'fr-FR',
-        'en': 'en-US',
-        'ru': 'ru-RU',
-        'sango': 'fr-FR'
-      };
-      
-      utterance.lang = langMap[langCode] || langCode;
-      utterance.rate = 0.9;
-      window.speechSynthesis.speak(utterance);
+    } else if (text && langCode) {
+      speakWithVoice(text, langCode);
     }
   };
-  
+
   return (
     <button
       onClick={handleAudio}
@@ -302,7 +362,7 @@ function Header({ userState, currentLang, setLang, goHome }: any) {
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3 cursor-pointer" onClick={goHome}>
           <BookOpen size={32} />
-          <h1 className="text-2xl font-bold">Mada-Sango</h1>
+          <h1 className="text-2xl font-bold">Manda Sango</h1>
         </div>
         
         <div className="flex items-center gap-6">
@@ -341,6 +401,260 @@ function Header({ userState, currentLang, setLang, goHome }: any) {
   );
 }
 
+// TEMPORARY DEBUG PANEL — lists every speech-synthesis voice the browser has.
+// Waits for the asynchronous "voiceschanged" event before listing.
+// Remove this component (and its use in renderHomeScreen) once debugging is done.
+function VoiceDebugPanel() {
+  const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
+  const [supported, setSupported] = useState(true);
+
+  useEffect(() => {
+    if (!('speechSynthesis' in window)) {
+      setSupported(false);
+      return;
+    }
+    const synth = window.speechSynthesis;
+    const load = () => setVoices(synth.getVoices());
+    load(); // try immediately (sometimes already loaded)
+    synth.addEventListener('voiceschanged', load); // and wait for async load
+    return () => synth.removeEventListener('voiceschanged', load);
+  }, []);
+
+  const russianVoices = voices.filter(v => v.lang.toLowerCase().startsWith('ru'));
+
+  return (
+    <div className="max-w-2xl mx-auto mt-12 p-4 border-2 border-dashed border-amber-400 bg-amber-50 rounded-lg text-left">
+      <h3 className="font-bold text-amber-800 mb-2">🔧 DEBUG voix (temporaire)</h3>
+
+      {!supported && (
+        <p className="text-red-600 font-semibold">
+          Ce navigateur ne supporte pas la synthèse vocale (speechSynthesis).
+        </p>
+      )}
+
+      {supported && (
+        <>
+          <p className="mb-2 text-sm">
+            <strong>Voix russes détectées (lang commence par « ru ») : </strong>
+            {russianVoices.length === 0 ? (
+              <span className="text-red-600 font-bold">AUCUNE ❌</span>
+            ) : (
+              <span className="text-green-700 font-bold">
+                {russianVoices.length} ✅ — {russianVoices.map(v => `${v.name} (${v.lang})`).join(', ')}
+              </span>
+            )}
+          </p>
+          <p className="text-sm text-slate-600 mb-2">
+            Total voix chargées : <strong>{voices.length}</strong>
+            {voices.length === 0 && ' (liste encore vide — attends quelques secondes / recharge la page)'}
+          </p>
+          <details>
+            <summary className="cursor-pointer text-sm text-amber-800 font-semibold">
+              Voir toutes les voix ({voices.length})
+            </summary>
+            <ul className="mt-2 max-h-64 overflow-auto text-xs font-mono">
+              {voices.map((v, i) => (
+                <li
+                  key={i}
+                  className={v.lang.toLowerCase().startsWith('ru') ? 'text-green-700 font-bold' : ''}
+                >
+                  {v.lang} — {v.name}
+                </li>
+              ))}
+            </ul>
+          </details>
+        </>
+      )}
+    </div>
+  );
+}
+
+// ===================== SECTION FIERTÉ NATIONALE =====================
+// Contenu vérifié (sources : Wikipédia, Ordre de la Libération, présidence RCA).
+// Tout est écrit en dur ici — la base Supabase n'est pas concernée.
+
+const ANTHEM = {
+  titleSango: 'E Zingo',
+  titleFr: 'La Renaissance',
+  author: 'Barthélemy Boganda',
+  composer: 'Herbert Pepper',
+  year: 1960,
+  theme:
+    "L'hymne célèbre le réveil de la Centrafrique, le courage de son peuple et l'appel à bâtir le pays dans le travail, la dignité et le respect.",
+  // Incipit (1re ligne) seulement — extrait court attribué. Les paroles complètes
+  // de Boganda sont encore protégées : voir le lien officiel ci-dessous.
+  incipitSango: 'Bêafrîka, mbeso tî âBantu…',
+  incipitFr: 'Ô Centrafrique, ô berceau des Bantous !…',
+  sourceUrl: 'https://fr.wikipedia.org/wiki/La_Renaissance_(hymne)',
+};
+
+interface Personnalite {
+  emoji: string;
+  nom: string;
+  dates: string;
+  role: string;
+  bio: string;
+  couleur: string;
+}
+
+const PERSONNALITES: Personnalite[] = [
+  {
+    emoji: '🕊️',
+    nom: 'Barthélemy Boganda',
+    dates: '1910 – 1959',
+    role: 'Père de la nation',
+    bio: "Prêtre puis premier député de l'Oubangui-Chari (1946), il fonde le MESAN et proclame la République centrafricaine le 1er décembre 1958. Il meurt dans un accident d'avion en 1959, peu avant l'indépendance.",
+    couleur: 'from-emerald-500 to-teal-600',
+  },
+  {
+    emoji: '🎖️',
+    nom: 'Lieutenant Georges Koudoukou',
+    dates: '1894 – 1942',
+    role: 'Premier officier centrafricain',
+    bio: "Surnommé « le père des tirailleurs », héros de la bataille de Bir-Hakeim (1942). Fait Compagnon de la Libération à titre posthume, il fut le premier officier africain à recevoir cette distinction.",
+    couleur: 'from-amber-500 to-orange-600',
+  },
+  {
+    emoji: '🔥',
+    nom: 'Karnou (Barka Ngainoumbey)',
+    dates: '? – 1928',
+    role: 'Résistant anticolonial',
+    bio: "Guide spirituel gbaya, il mène la révolte du Kongo-Wara (1928), l'une des plus grandes résistances africaines à la colonisation. Il est tué par l'armée coloniale en décembre 1928.",
+    couleur: 'from-red-500 to-rose-600',
+  },
+  {
+    emoji: '👑',
+    nom: 'Jean-Bedel Bokassa',
+    dates: '1921 – 1996',
+    role: 'Président puis Empereur',
+    bio: "Militaire des Forces françaises libres, il prend le pouvoir en 1966 puis se proclame empereur en 1976, avant d'être renversé en 1979. Figure marquante mais controversée de l'histoire du pays.",
+    couleur: 'from-indigo-500 to-purple-600',
+  },
+  {
+    emoji: '🏛️',
+    nom: 'David Dacko',
+    dates: '1930 – 2003',
+    role: 'Premier président de la RCA',
+    bio: "Cousin et successeur de Boganda, il devient le premier président de la République centrafricaine indépendante en 1960.",
+    couleur: 'from-sky-500 to-blue-600',
+  },
+];
+
+interface FeteNat {
+  date: string;
+  nom: string;
+  detail: string;
+}
+
+const CALENDRIER: FeteNat[] = [
+  { date: '29 mars', nom: 'Journée Boganda', detail: "Commémoration de la mort de Barthélemy Boganda (1959)." },
+  { date: '13 août', nom: "Fête de l'Indépendance", detail: 'Indépendance de la République centrafricaine (1960).' },
+  { date: '1ᵉʳ déc.', nom: 'Fête nationale', detail: 'Proclamation de la République par Boganda (1958).' },
+  { date: '15 août', nom: 'Assomption', detail: 'Fête religieuse chômée.' },
+  { date: '1ᵉʳ nov.', nom: 'Toussaint', detail: 'Fête religieuse chômée.' },
+  { date: '25 déc.', nom: 'Noël', detail: 'Fête religieuse chômée.' },
+];
+
+function FierteNationale({ onBack }: { onBack: () => void }) {
+  return (
+    <div className="max-w-5xl mx-auto px-4 py-8">
+      <button
+        onClick={onBack}
+        className="flex items-center gap-1 text-emerald-700 font-semibold mb-6 hover:underline"
+      >
+        <ChevronLeft size={20} /> Retour à l'accueil
+      </button>
+
+      <div className="flex items-center justify-center gap-3 mb-2">
+        <CARFlag size={36} />
+        <h2 className="text-4xl font-bold text-center">Fierté nationale</h2>
+      </div>
+      <p className="text-center text-slate-600 mb-10">
+        L'hymne, les grandes figures et les fêtes de la République centrafricaine.
+      </p>
+
+      {/* HYMNE */}
+      <section className="mb-12">
+        <h3 className="flex items-center gap-2 text-2xl font-bold mb-4">
+          <BookOpen size={24} className="text-emerald-600" /> Hymne national
+        </h3>
+        <div className="bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200 rounded-xl p-6">
+          <p className="text-2xl font-bold text-emerald-800">
+            « {ANTHEM.titleSango} » <span className="text-slate-500 text-lg font-normal">— {ANTHEM.titleFr}</span>
+          </p>
+          <p className="text-sm text-slate-600 mt-1">
+            Paroles : {ANTHEM.author} · Musique : {ANTHEM.composer} · {ANTHEM.year}
+          </p>
+          <p className="mt-4 text-slate-700">{ANTHEM.theme}</p>
+
+          <div className="mt-4 grid sm:grid-cols-2 gap-4">
+            <div className="bg-white/70 rounded-lg p-4">
+              <p className="text-xs uppercase tracking-wide text-slate-500 mb-1">Sango (début)</p>
+              <p className="italic text-emerald-900">{ANTHEM.incipitSango}</p>
+            </div>
+            <div className="bg-white/70 rounded-lg p-4">
+              <p className="text-xs uppercase tracking-wide text-slate-500 mb-1">Français (début)</p>
+              <p className="italic text-emerald-900">{ANTHEM.incipitFr}</p>
+            </div>
+          </div>
+
+          <p className="mt-4 text-sm text-slate-600">
+            Les paroles de Boganda sont encore protégées par le droit d'auteur :{' '}
+            <a
+              href={ANTHEM.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-emerald-700 font-semibold underline"
+            >
+              lire / écouter l'hymne complet
+            </a>
+            .
+          </p>
+        </div>
+      </section>
+
+      {/* PERSONNALITÉS */}
+      <section className="mb-12">
+        <h3 className="flex items-center gap-2 text-2xl font-bold mb-4">
+          <Users size={24} className="text-emerald-600" /> Grandes figures
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          {PERSONNALITES.map((p) => (
+            <div key={p.nom} className="rounded-xl overflow-hidden border border-slate-200 shadow-sm bg-white">
+              <div className={`bg-gradient-to-r ${p.couleur} text-white p-4 flex items-center gap-3`}>
+                <span className="text-3xl">{p.emoji}</span>
+                <div>
+                  <p className="font-bold leading-tight">{p.nom}</p>
+                  <p className="text-sm text-white/90">{p.dates} · {p.role}</p>
+                </div>
+              </div>
+              <p className="p-4 text-slate-700 text-sm leading-relaxed">{p.bio}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* CALENDRIER */}
+      <section className="mb-8">
+        <h3 className="flex items-center gap-2 text-2xl font-bold mb-4">
+          <Calendar size={24} className="text-emerald-600" /> Fêtes nationales
+        </h3>
+        <div className="bg-white border border-slate-200 rounded-xl divide-y">
+          {CALENDRIER.map((f) => (
+            <div key={f.date + f.nom} className="flex items-start gap-4 p-4">
+              <span className="shrink-0 w-20 font-bold text-emerald-700">{f.date}</span>
+              <div>
+                <p className="font-semibold">{f.nom}</p>
+                <p className="text-sm text-slate-600">{f.detail}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+}
+
 function App() {
   const [screen, setScreen] = useState<Screen>('home');
   const [currentLang, setCurrentLang] = useState<Language>('fr');
@@ -354,6 +668,12 @@ function App() {
   const [categories, setCategories] = useState<Category[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+
+  // Flashcards & Quiz state (must live at component level, not inside render functions)
+  const [flashIndex, setFlashIndex] = useState(0);
+  const [isFlipped, setIsFlipped] = useState(false);
+  const [quizIndex, setQuizIndex] = useState(0);
+  const [quizScore, setQuizScore] = useState(0);
 
   // Load data from Supabase or use fallback + Load hearts from localStorage
   useEffect(() => {
@@ -446,9 +766,23 @@ function App() {
           <div className="flex justify-center mb-8">
             <img src="/mascotte.png" alt="Mascotte Manda Sango" className="h-32 w-32 drop-shadow-lg" />
           </div>
-          <h2 className="text-4xl font-bold mb-4">Bienvenue dans Mada-Sango</h2>
+          <h2 className="text-4xl font-bold mb-4">Bienvenue dans Manda Sango</h2>
           <p className="text-xl text-slate-600">Apprenez le Sango, la langue de la République Centrafricaine</p>
         </div>
+
+        <button
+          onClick={() => setScreen('fierte')}
+          className="w-full mb-10 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-xl p-5 flex items-center justify-between cursor-pointer transform hover:scale-[1.01] transition shadow-md"
+        >
+          <span className="flex items-center gap-3">
+            <CARFlag size={32} />
+            <span className="text-left">
+              <span className="block text-xl font-bold">🏛️ Fierté nationale</span>
+              <span className="block text-sm text-white/90">Hymne, grandes figures et fêtes de la RCA</span>
+            </span>
+          </span>
+          <span className="text-2xl">→</span>
+        </button>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {categories.map((category) => (
@@ -467,6 +801,8 @@ function App() {
                 <button
                   onClick={() => {
                     setSelectedCategory(category.id);
+                    setFlashIndex(0);
+                    setIsFlipped(false);
                     setScreen('flashcards');
                   }}
                   className="flex-1 bg-white/30 hover:bg-white/40 rounded px-4 py-2 font-semibold transition"
@@ -476,6 +812,8 @@ function App() {
                 <button
                   onClick={() => {
                     setSelectedCategory(category.id);
+                    setQuizIndex(0);
+                    setQuizScore(0);
                     setScreen('quiz');
                   }}
                   className="flex-1 bg-white/30 hover:bg-white/40 rounded px-4 py-2 font-semibold transition"
@@ -486,6 +824,8 @@ function App() {
             </div>
           ))}
         </div>
+
+        <VoiceDebugPanel />
       </div>
     );
   };
@@ -495,9 +835,7 @@ function App() {
     const category = categories.find(c => c.id === selectedCategory);
     if (!category) return null;
 
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [isFlipped, setIsFlipped] = useState(false);
-    const word = category.words[currentIndex];
+    const word = category.words[flashIndex];
 
     return (
       <div className="max-w-2xl mx-auto px-4 py-8">
@@ -510,7 +848,7 @@ function App() {
             Retour
           </button>
           <h2 className="text-2xl font-bold">{category.title}</h2>
-          <span className="text-slate-600">{currentIndex + 1} / {category.words.length}</span>
+          <span className="text-slate-600">{flashIndex + 1} / {category.words.length}</span>
         </div>
 
         <div
@@ -536,30 +874,24 @@ function App() {
           <div className="mt-8 flex gap-2 justify-center flex-wrap">
             <p className="w-full text-center text-sm text-slate-600 mb-2">Traductions audio :</p>
             <div className="flex gap-2">
-              <button className="flex items-center gap-1 px-3 py-2 bg-blue-100 text-blue-700 rounded font-semibold">
-                🇫🇷 FR <AudioButton text={word.fr} langCode="fr" />
-              </button>
-              <button className="flex items-center gap-1 px-3 py-2 bg-red-100 text-red-700 rounded font-semibold">
-                🇷🇺 RU <AudioButton text={word.ru} langCode="ru" />
-              </button>
-              <button className="flex items-center gap-1 px-3 py-2 bg-green-100 text-green-700 rounded font-semibold">
-                🇬🇧 EN <AudioButton text={word.en} langCode="en" />
-              </button>
+              <LangAudio flag="🇫🇷" label="FR" text={word.fr} langCode="fr" color="bg-blue-100 text-blue-700" />
+              <LangAudio flag="🇷🇺" label="RU" text={word.ru} langCode="ru" color="bg-red-100 text-red-700" />
+              <LangAudio flag="🇬🇧" label="EN" text={word.en} langCode="en" color="bg-green-100 text-green-700" />
             </div>
           </div>
         )}
 
         <div className="flex gap-4 mt-8 justify-center">
           <button
-            onClick={() => setCurrentIndex(Math.max(0, currentIndex - 1))}
-            disabled={currentIndex === 0}
+            onClick={() => { setFlashIndex(Math.max(0, flashIndex - 1)); setIsFlipped(false); }}
+            disabled={flashIndex === 0}
             className="px-6 py-2 bg-slate-300 rounded disabled:opacity-50"
           >
             Précédent
           </button>
           <button
-            onClick={() => setCurrentIndex(Math.min(category.words.length - 1, currentIndex + 1))}
-            disabled={currentIndex === category.words.length - 1}
+            onClick={() => { setFlashIndex(Math.min(category.words.length - 1, flashIndex + 1)); setIsFlipped(false); }}
+            disabled={flashIndex === category.words.length - 1}
             className="px-6 py-2 bg-emerald-600 text-white rounded disabled:opacity-50"
           >
             Suivant
@@ -574,35 +906,33 @@ function App() {
     const category = categories.find(c => c.id === selectedCategory);
     if (!category) return null;
 
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [score, setScore] = useState(0);
-    const word = category.words[currentIndex];
+    const word = category.words[quizIndex];
     const options = [
       word[currentLang as keyof Word] || word.sango,
-      category.words[(currentIndex + 1) % category.words.length][currentLang as keyof Word] || word.sango,
-      category.words[(currentIndex + 2) % category.words.length][currentLang as keyof Word] || word.sango,
+      category.words[(quizIndex + 1) % category.words.length][currentLang as keyof Word] || word.sango,
+      category.words[(quizIndex + 2) % category.words.length][currentLang as keyof Word] || word.sango,
     ].sort(() => Math.random() - 0.5);
 
     const handleAnswer = (selected: string) => {
       const isCorrect = selected === (word[currentLang as keyof Word] || word.sango);
-      
+
       if (isCorrect) {
-        setScore(score + 1);
+        setQuizScore(quizScore + 1);
       } else {
         // Lose a heart
         const newHearts = Math.max(0, userState.hearts - 1);
         setUserState(prev => ({ ...prev, hearts: newHearts }));
         saveHeartsToStorage(newHearts);
-        
+
         // If no hearts left, block the quiz
         if (newHearts === 0) {
           setTimeout(() => setScreen('home'), 1000);
           return;
         }
       }
-      
-      if (currentIndex < category.words.length - 1) {
-        setCurrentIndex(currentIndex + 1);
+
+      if (quizIndex < category.words.length - 1) {
+        setQuizIndex(quizIndex + 1);
       } else {
         setScreen('home');
       }
@@ -619,7 +949,7 @@ function App() {
             Retour
           </button>
           <h2 className="text-2xl font-bold">{category.title}</h2>
-          <span className="text-slate-600">Score: {score} / {category.words.length}</span>
+          <span className="text-slate-600">Score: {quizScore} / {category.words.length}</span>
         </div>
 
         <div className="bg-slate-100 rounded-lg p-8 mb-8 text-center">
@@ -680,6 +1010,7 @@ function App() {
         {screen === 'quiz' && userState.hearts > 0 && renderQuiz()}
         {screen === 'quiz' && userState.hearts === 0 && renderBlockedScreen()}
         {screen === 'duel' && renderDuel()}
+        {screen === 'fierte' && <FierteNationale onBack={() => setScreen('home')} />}
       </main>
     </div>
   );

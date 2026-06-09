@@ -1,0 +1,4452 @@
+[
+  {
+    "ID": "SAG-0001",
+    "Sango": "Bara mo",
+    "Français": "Bonjour",
+    "Anglais": "Good morning",
+    "Catégorie": "Salutations et Politesse",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0001_Bara_mo.mp3",
+    "Russe": "Бонжур"
+  },
+  {
+    "ID": "SAG-0002",
+    "Sango": "Balaô",
+    "Français": "Salut",
+    "Anglais": "Hi",
+    "Catégorie": "Salutations et Politesse",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0002_Balaô.mp3",
+    "Russe": "здоровье"
+  },
+  {
+    "ID": "SAG-0003",
+    "Sango": "Nzoni gango",
+    "Français": "Bienvenue",
+    "Anglais": "Welcome",
+    "Catégorie": "Salutations et Politesse",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0003_Nzoni_gango.mp3",
+    "Russe": "Добро пожаловать"
+  },
+  {
+    "ID": "SAG-0004",
+    "Sango": "Töngana nye?",
+    "Français": "Comment vas-tu ?",
+    "Anglais": "How are you ?",
+    "Catégorie": "Salutations et Politesse",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0004_Töngana_nye?.mp3",
+    "Russe": "Как вы ?"
+  },
+  {
+    "ID": "SAG-0005",
+    "Sango": "Mbï yeke sêngê",
+    "Français": "Je vais bien",
+    "Anglais": "I'm doing well",
+    "Catégorie": "Salutations et Politesse",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0005_Mbï_yeke_sêngê.mp3",
+    "Russe": "у меня все хорошо"
+  },
+  {
+    "ID": "SAG-0006",
+    "Sango": "Singîla",
+    "Français": "Merci",
+    "Anglais": "Thanks",
+    "Catégorie": "Salutations et Politesse",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0006_Singîla.mp3",
+    "Russe": "Мерси"
+  },
+  {
+    "ID": "SAG-0007",
+    "Sango": "Singîla mingi",
+    "Français": "Merci beaucoup",
+    "Anglais": "Thank you so much",
+    "Catégorie": "Salutations et Politesse",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0007_Singîla_mingi.mp3",
+    "Russe": "Большое спасибо"
+  },
+  {
+    "ID": "SAG-0008",
+    "Sango": "Asala ye ape",
+    "Français": "De rien",
+    "Anglais": "It was nothing",
+    "Catégorie": "Salutations et Politesse",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0008_Asala_ye_ape.mp3",
+    "Russe": "Это было ничего"
+  },
+  {
+    "ID": "SAG-0009",
+    "Sango": "Mbi gbu gere ti mo",
+    "Français": "S'il te plaît",
+    "Anglais": "Please",
+    "Catégorie": "Salutations et Politesse",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0009_Mbi_gbu_gere_ti_mo.mp3",
+    "Russe": "Пожалуйста"
+  },
+  {
+    "ID": "SAG-0010",
+    "Sango": "Gbu gere ti ala",
+    "Français": "Excusez-moi",
+    "Anglais": "Excuse me",
+    "Catégorie": "Salutations et Politesse",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0010_Gbu_gere_ti_ala.mp3",
+    "Russe": "Прошу прощения"
+  },
+  {
+    "ID": "SAG-0011",
+    "Sango": "Lango Njönî",
+    "Français": "Bonne nuit",
+    "Anglais": "Good night",
+    "Catégorie": "Salutations et Politesse",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0011_Lango_Njönî.mp3",
+    "Russe": "Спокойной ночи"
+  },
+  {
+    "ID": "SAG-0012",
+    "Sango": "Âla Gué Njönî",
+    "Français": "Au revoir",
+    "Anglais": "Bye",
+    "Catégorie": "Salutations et Politesse",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0012_Âla_Gué_Njönî.mp3",
+    "Russe": "Пока"
+  },
+  {
+    "ID": "SAG-0013",
+    "Sango": "Mon ngba nzoni",
+    "Français": "À plus tard",
+    "Anglais": "See you",
+    "Catégorie": "Salutations et Politesse",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0013_Mon_ngba_nzoni.mp3",
+    "Russe": "Увидимся"
+  },
+  {
+    "ID": "SAG-0014",
+    "Sango": "Na kekereke",
+    "Français": "À demain",
+    "Anglais": "See you tomorrow",
+    "Catégorie": "Salutations et Politesse",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0014_Na_kekereke.mp3",
+    "Russe": "Увидимся завтра"
+  },
+  {
+    "ID": "SAG-0015",
+    "Sango": "Na ngia",
+    "Français": "Enchanté",
+    "Anglais": "Delighted",
+    "Catégorie": "Salutations et Politesse",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0015_Na_ngia.mp3",
+    "Russe": "Получивший удовольствие"
+  },
+  {
+    "ID": "SAG-0016",
+    "Sango": "Be ti mbi anzere",
+    "Français": "Très heureux",
+    "Anglais": "Very happy",
+    "Catégorie": "Salutations et Politesse",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0016_Be_ti_mbi_anzere.mp3",
+    "Russe": "Очень рад"
+  },
+  {
+    "ID": "SAG-0017",
+    "Sango": "Ngia mingi",
+    "Français": "Tous mes vœux",
+    "Anglais": "All my wishes",
+    "Catégorie": "Salutations et Politesse",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0017_Ngia_mingi.mp3",
+    "Russe": "Все мои пожелания"
+  },
+  {
+    "ID": "SAG-0018",
+    "Sango": "A nzoni yé ti mbi kue",
+    "Français": "Meilleurs vœux",
+    "Anglais": "Best wishes",
+    "Catégorie": "Salutations et Politesse",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0018_A_nzoni_yé_ti_mbi_ku.mp3",
+    "Russe": "С наилучшими пожеланиями"
+  },
+  {
+    "ID": "SAG-0019",
+    "Sango": "Nzoni lango na mo",
+    "Français": "Bonne chance",
+    "Anglais": "Good luck",
+    "Catégorie": "Salutations et Politesse",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0019_Nzoni_lango_na_mo.mp3",
+    "Russe": "Удачи"
+  },
+  {
+    "ID": "SAG-0020",
+    "Sango": "e yeke ba tere",
+    "Français": "À bientôt",
+    "Anglais": "See you soon",
+    "Catégorie": "Salutations et Politesse",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0020_e_yeke_ba_tere.mp3",
+    "Russe": "До скорой встречи"
+  },
+  {
+    "ID": "SAG-0021",
+    "Sango": "Ïrï tî mo nye?",
+    "Français": "Quel est ton nom ?",
+    "Anglais": "What is your name?",
+    "Catégorie": "Identité et Présentation",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0021_Ïrï_tî_mo_nye?.mp3",
+    "Russe": "Как вас зовут?"
+  },
+  {
+    "ID": "SAG-0022",
+    "Sango": "Ïrï tî mo nye...",
+    "Français": "Mon nom est...",
+    "Anglais": "My name is...",
+    "Catégorie": "Identité et Présentation",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0022_Ïrï_tî_mo_nye....mp3",
+    "Russe": "Меня зовут..."
+  },
+  {
+    "ID": "SAG-0023",
+    "Sango": "Ala londo na ndo wa?",
+    "Français": "D'ou viens-tu ?",
+    "Anglais": "Where are you from?",
+    "Catégorie": "Identité et Présentation",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0023_Ala_londo_na_ndo_wa?.mp3",
+    "Russe": "Откуда ты?"
+  },
+  {
+    "ID": "SAG-0024",
+    "Sango": "Mbi londo na...",
+    "Français": "Je viens de...",
+    "Anglais": "I just...",
+    "Catégorie": "Identité et Présentation",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0024_Mbi_londo_na....mp3",
+    "Russe": "Я просто..."
+  },
+  {
+    "ID": "SAG-0025",
+    "Sango": "Anzere ti hinga ala",
+    "Français": "Enchanté",
+    "Anglais": "Delighted",
+    "Catégorie": "Identité et Présentation",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0025_Anzere_ti_hinga_ala.mp3",
+    "Russe": "Получивший удовольствие"
+  },
+  {
+    "ID": "SAG-0026",
+    "Sango": "Kôlï",
+    "Français": "Homme",
+    "Anglais": "Man",
+    "Catégorie": "Identité et Présentation",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0026_Kôlï.mp3",
+    "Russe": "Человек"
+  },
+  {
+    "ID": "SAG-0027",
+    "Sango": "Wâlï",
+    "Français": "Femme",
+    "Anglais": "Women",
+    "Catégorie": "Identité et Présentation",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0027_Wâlï.mp3",
+    "Russe": "женщина"
+  },
+  {
+    "ID": "SAG-0028",
+    "Sango": "Môlengê",
+    "Français": "Enfant",
+    "Anglais": "Child",
+    "Catégorie": "Identité et Présentation",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0028_Môlengê.mp3",
+    "Russe": "ребенок"
+  },
+  {
+    "ID": "SAG-0029",
+    "Sango": "Kete molenge",
+    "Français": "Profession",
+    "Anglais": "Occupation",
+    "Catégorie": "Identité et Présentation",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0029_Kete_molenge.mp3",
+    "Russe": "Профессия"
+  },
+  {
+    "ID": "SAG-0030",
+    "Sango": "Kua ti zo",
+    "Français": "Métier",
+    "Anglais": "Job",
+    "Catégorie": "Identité et Présentation",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0030_Kua_ti_zo.mp3",
+    "Russe": "Работа"
+  },
+  {
+    "ID": "SAG-0031",
+    "Sango": "Kua",
+    "Français": "Travail",
+    "Anglais": "Work",
+    "Catégorie": "Identité et Présentation",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0031_Kua.mp3",
+    "Russe": "Работа"
+  },
+  {
+    "ID": "SAG-0032",
+    "Sango": "Dutingo molenge ti kodoro",
+    "Français": "Nationalité",
+    "Anglais": "Nationality",
+    "Catégorie": "Identité et Présentation",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0032_Dutingo_molenge_ti_k.mp3",
+    "Russe": "Национальность"
+  },
+  {
+    "ID": "SAG-0033",
+    "Sango": "Ngu",
+    "Français": "Âge",
+    "Anglais": "Age",
+    "Catégorie": "Identité et Présentation",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0033_Ngu.mp3",
+    "Russe": "Возраст"
+  },
+  {
+    "ID": "SAG-0034",
+    "Sango": "Ngu ti mo ayeke oke?",
+    "Français": "Quel Âge as-tu ?",
+    "Anglais": "How old are you?",
+    "Catégorie": "Identité et Présentation",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0034_Ngu_ti_mo_ayeke_oke?.mp3",
+    "Russe": "Сколько тебе лет?"
+  },
+  {
+    "ID": "SAG-0035",
+    "Sango": "Mbi yeke na... ngu",
+    "Français": "J'ai... ans",
+    "Anglais": "I'm... years old",
+    "Catégorie": "Identité et Présentation",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0035_Mbi_yeke_na..._ngu.mp3",
+    "Russe": "мне... лет"
+  },
+  {
+    "ID": "SAG-0036",
+    "Sango": "Adresi",
+    "Français": "Adresse",
+    "Anglais": "Address",
+    "Catégorie": "Identité et Présentation",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0036_Adresi.mp3",
+    "Russe": "Адрес"
+  },
+  {
+    "ID": "SAG-0037",
+    "Sango": "Numéro ti singa",
+    "Français": "Téléphone",
+    "Anglais": "Phone",
+    "Catégorie": "Identité et Présentation",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0037_Numéro_ti_singa.mp3",
+    "Russe": "Телефон"
+  },
+  {
+    "ID": "SAG-0038",
+    "Sango": "Asango ti warango ni",
+    "Français": "Contact",
+    "Anglais": "Contact",
+    "Catégorie": "Identité et Présentation",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0038_Asango_ti_warango_ni.mp3",
+    "Russe": "Контакт"
+  },
+  {
+    "ID": "SAG-0039",
+    "Sango": "Sewa",
+    "Français": "Famille",
+    "Anglais": "Family",
+    "Catégorie": "Identité et Présentation",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0039_Sewa.mp3",
+    "Russe": "Семья"
+  },
+  {
+    "ID": "SAG-0040",
+    "Sango": "Lo fa séléka awe",
+    "Français": "Mariage",
+    "Anglais": "Marriage",
+    "Catégorie": "Identité et Présentation",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0040_Lo_fa_séléka_awe.mp3",
+    "Russe": "Свадьба"
+  },
+  {
+    "ID": "SAG-0041",
+    "Sango": "Sô Zua ?",
+    "Français": "Qui ?",
+    "Anglais": "Who ?",
+    "Catégorie": "Questions Courantes",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0041_Sô_Zua_?.mp3",
+    "Russe": "ВОЗ ?"
+  },
+  {
+    "ID": "SAG-0042",
+    "Sango": "Nye?",
+    "Français": "Quoi ?",
+    "Anglais": "What ?",
+    "Catégorie": "Questions Courantes",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0042_Nye?.mp3",
+    "Russe": "Как?"
+  },
+  {
+    "ID": "SAG-0043",
+    "Sango": "Lâ wa ?",
+    "Français": "Quand ?",
+    "Anglais": "When ?",
+    "Catégorie": "Questions Courantes",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0043_Lâ_wa_?.mp3",
+    "Russe": "Когда ?"
+  },
+  {
+    "ID": "SAG-0044",
+    "Sango": "Na ndo wa?",
+    "Français": "Où ?",
+    "Anglais": "Where?",
+    "Catégorie": "Questions Courantes",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0044_Na_ndo_wa?.mp3",
+    "Russe": "Или ?"
+  },
+  {
+    "ID": "SAG-0045",
+    "Sango": "Ndâli ni nye ?",
+    "Français": "Pourquoi ?",
+    "Anglais": "For what ?",
+    "Catégorie": "Questions Courantes",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0045_Ndâli_ni_nye_?.mp3",
+    "Russe": "За что ?"
+  },
+  {
+    "ID": "SAG-0046",
+    "Sango": "Tôngana nye ?",
+    "Français": "Comment ?",
+    "Anglais": "How ?",
+    "Catégorie": "Questions Courantes",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0046_Tôngana_nye_?.mp3",
+    "Russe": "Комментарий?"
+  },
+  {
+    "ID": "SAG-0047",
+    "Sango": "Ôké ?",
+    "Français": "Combien ?",
+    "Anglais": "How much ?",
+    "Catégorie": "Questions Courantes",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0047_Ôké_?.mp3",
+    "Russe": "Сколько ?"
+  },
+  {
+    "ID": "SAG-0048",
+    "Sango": "Lo Sô Wa ?",
+    "Français": "Lequel ?",
+    "Anglais": "Which ?",
+    "Catégorie": "Questions Courantes",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0048_Lo_Sô_Wa_?.mp3",
+    "Russe": "Который ?"
+  },
+  {
+    "ID": "SAG-0049",
+    "Sango": "Mo tene anglai?",
+    "Français": "Parles-tu anglais ?",
+    "Anglais": "Do you speak english?",
+    "Catégorie": "Questions Courantes",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0049_Mo_tene_anglai?.mp3",
+    "Russe": "Вы говорите по-английски?"
+  },
+  {
+    "ID": "SAG-0050",
+    "Sango": "Mo tene Sango?",
+    "Français": "Parles-tu sango ?",
+    "Anglais": "Do you speak sango?",
+    "Catégorie": "Questions Courantes",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0050_Mo_tene_Sango?.mp3",
+    "Russe": "Ты говоришь на санго?"
+  },
+  {
+    "ID": "SAG-0051",
+    "Sango": "Ngere ni ayeke so wa?",
+    "Français": "Quel est le prix ?",
+    "Anglais": "What is the price?",
+    "Catégorie": "Questions Courantes",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0051_Ngere_ni_ayeke_so_wa.mp3",
+    "Russe": "Какова цена?"
+  },
+  {
+    "ID": "SAG-0052",
+    "Sango": "A yeke futa nginza oke?",
+    "Français": "Ça coûte combien ?",
+    "Anglais": "How much does it cost?",
+    "Catégorie": "Questions Courantes",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0052_A_yeke_futa_nginza_o.mp3",
+    "Russe": "Сколько это стоит?"
+  },
+  {
+    "ID": "SAG-0053",
+    "Sango": "Mo lingbi ti mû maboko na mbi?",
+    "Français": "Pouvez-vous m'aider ?",
+    "Anglais": "Can you help me?",
+    "Catégorie": "Questions Courantes",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0053_Mo_lingbi_ti_mû_mabo.mp3",
+    "Russe": "Вы можете помочь мне?"
+  },
+  {
+    "ID": "SAG-0054",
+    "Sango": "Mo hinga ni?",
+    "Français": "Savez-vous ?",
+    "Anglais": "Do you know?",
+    "Catégorie": "Questions Courantes",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0054_Mo_hinga_ni?.mp3",
+    "Russe": "Вы знаете?"
+  },
+  {
+    "ID": "SAG-0055",
+    "Sango": "Mo yeke na ni awe?",
+    "Français": "Avez-vous ?",
+    "Anglais": "Do you have?",
+    "Catégorie": "Questions Courantes",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0055_Mo_yeke_na_ni_awe?.mp3",
+    "Russe": "У вас есть?"
+  },
+  {
+    "ID": "SAG-0056",
+    "Sango": "Mo ye ti sara ni?",
+    "Français": "Voulez-vous ?",
+    "Anglais": "Do you want?",
+    "Catégorie": "Questions Courantes",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0056_Mo_ye_ti_sara_ni?.mp3",
+    "Russe": "Вы хотите?"
+  },
+  {
+    "ID": "SAG-0057",
+    "Sango": "Mo lingbi ti sara ni?",
+    "Français": "Pouvez-vous ?",
+    "Anglais": "Can you ?",
+    "Catégorie": "Questions Courantes",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0057_Mo_lingbi_ti_sara_ni.mp3",
+    "Russe": "Не могли бы вы ?"
+  },
+  {
+    "ID": "SAG-0058",
+    "Sango": "A yeke ngbonga oke?",
+    "Français": "Quelle heure est-il ?",
+    "Anglais": "What time is it?",
+    "Catégorie": "Questions Courantes",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0058_A_yeke_ngbonga_oke?.mp3",
+    "Russe": "Который сейчас час?"
+  },
+  {
+    "ID": "SAG-0059",
+    "Sango": "Lango wa?",
+    "Français": "Quel jour ?",
+    "Anglais": "What day?",
+    "Catégorie": "Questions Courantes",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0059_Lango_wa?.mp3",
+    "Russe": "Какой день?"
+  },
+  {
+    "ID": "SAG-0060",
+    "Sango": "Date wa?",
+    "Français": "Quelle date ?",
+    "Anglais": "What date?",
+    "Catégorie": "Questions Courantes",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0060_Date_wa?.mp3",
+    "Russe": "Какая дата?"
+  },
+  {
+    "ID": "SAG-0061",
+    "Sango": "Ôko",
+    "Français": "Un",
+    "Anglais": "A",
+    "Catégorie": "Nombres",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0061_Ôko.mp3",
+    "Russe": "И"
+  },
+  {
+    "ID": "SAG-0062",
+    "Sango": "Üse",
+    "Français": "Deux",
+    "Anglais": "Two",
+    "Catégorie": "Nombres",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0062_Üse.mp3",
+    "Russe": "Два"
+  },
+  {
+    "ID": "SAG-0063",
+    "Sango": "Otâ",
+    "Français": "Trois",
+    "Anglais": "Three",
+    "Catégorie": "Nombres",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0063_Otâ.mp3",
+    "Russe": "Три"
+  },
+  {
+    "ID": "SAG-0064",
+    "Sango": "Osiô",
+    "Français": "Quatre",
+    "Anglais": "Four",
+    "Catégorie": "Nombres",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0064_Osiô.mp3",
+    "Russe": "Четыре"
+  },
+  {
+    "ID": "SAG-0065",
+    "Sango": "Okuë",
+    "Français": "Cinq",
+    "Anglais": "Five",
+    "Catégorie": "Nombres",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0065_Okuë.mp3",
+    "Russe": "Пять"
+  },
+  {
+    "ID": "SAG-0066",
+    "Sango": "Omënë",
+    "Français": "Six",
+    "Anglais": "Six",
+    "Catégorie": "Nombres",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0066_Omënë.mp3",
+    "Russe": "Шесть"
+  },
+  {
+    "ID": "SAG-0067",
+    "Sango": "Mbasambala",
+    "Français": "Sept",
+    "Anglais": "Seven",
+    "Catégorie": "Nombres",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0067_Mbasambala.mp3",
+    "Russe": "сентябрь"
+  },
+  {
+    "ID": "SAG-0068",
+    "Sango": "Miombe",
+    "Français": "Huit",
+    "Anglais": "Eight",
+    "Catégorie": "Nombres",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0068_Miombe.mp3",
+    "Russe": "Восемь"
+  },
+  {
+    "ID": "SAG-0069",
+    "Sango": "Gumbaya",
+    "Français": "Neuf",
+    "Anglais": "Nine",
+    "Catégorie": "Nombres",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0069_Gumbaya.mp3",
+    "Russe": "Девять"
+  },
+  {
+    "ID": "SAG-0070",
+    "Sango": "Bale ôko",
+    "Français": "Dix",
+    "Anglais": "Ten",
+    "Catégorie": "Nombres",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0070_Bale_ôko.mp3",
+    "Russe": "Дикс"
+  },
+  {
+    "ID": "SAG-0071",
+    "Sango": "Bale oko na oko",
+    "Français": "Onze",
+    "Anglais": "Eleven",
+    "Catégorie": "Nombres",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0071_Bale_oko_na_oko.mp3",
+    "Russe": "Наш"
+  },
+  {
+    "ID": "SAG-0072",
+    "Sango": "Bale oko na use",
+    "Français": "Douze",
+    "Anglais": "Twelve",
+    "Catégorie": "Nombres",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0072_Bale_oko_na_use.mp3",
+    "Russe": "Двенадцать"
+  },
+  {
+    "ID": "SAG-0073",
+    "Sango": "Bale oko na ota",
+    "Français": "Treize",
+    "Anglais": "Thirteen",
+    "Catégorie": "Nombres",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0073_Bale_oko_na_ota.mp3",
+    "Russe": "Тринадцать"
+  },
+  {
+    "ID": "SAG-0074",
+    "Sango": "Bale oko na osio",
+    "Français": "Quatorze",
+    "Anglais": "Fourteen",
+    "Catégorie": "Nombres",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0074_Bale_oko_na_osio.mp3",
+    "Russe": "Четырнадцать"
+  },
+  {
+    "ID": "SAG-0075",
+    "Sango": "Bale oko na oku",
+    "Français": "Quinze",
+    "Anglais": "Fifteen",
+    "Catégorie": "Nombres",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0075_Bale_oko_na_oku.mp3",
+    "Russe": "Пятнадцать"
+  },
+  {
+    "ID": "SAG-0076",
+    "Sango": "Bale use",
+    "Français": "Vingt",
+    "Anglais": "Twenty",
+    "Catégorie": "Nombres",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0076_Bale_use.mp3",
+    "Russe": "Двадцать"
+  },
+  {
+    "ID": "SAG-0077",
+    "Sango": "Bale ota",
+    "Français": "Trente",
+    "Anglais": "Thirty",
+    "Catégorie": "Nombres",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0077_Bale_ota.mp3",
+    "Russe": "Тридцать"
+  },
+  {
+    "ID": "SAG-0078",
+    "Sango": "Bale osio",
+    "Français": "Quarante",
+    "Anglais": "Forty",
+    "Catégorie": "Nombres",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0078_Bale_osio.mp3",
+    "Russe": "Сорок"
+  },
+  {
+    "ID": "SAG-0079",
+    "Sango": "Bale oku",
+    "Français": "Cinquante",
+    "Anglais": "Fifty",
+    "Catégorie": "Nombres",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0079_Bale_oku.mp3",
+    "Russe": "Пятьдесят"
+  },
+  {
+    "ID": "SAG-0080",
+    "Sango": "Bale omene",
+    "Français": "Soixante",
+    "Anglais": "Sixty",
+    "Catégorie": "Nombres",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0080_Bale_omene.mp3",
+    "Russe": "Шестьдесят"
+  },
+  {
+    "ID": "SAG-0081",
+    "Sango": "Lâsô",
+    "Français": "Aujourd'hui",
+    "Anglais": "Today",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0081_Lâsô.mp3",
+    "Russe": "Сегодня"
+  },
+  {
+    "ID": "SAG-0082",
+    "Sango": "Bîrî",
+    "Français": "Hier",
+    "Anglais": "Yesterday",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0082_Bîrî.mp3",
+    "Russe": "Здесь"
+  },
+  {
+    "ID": "SAG-0083",
+    "Sango": "Kekereke",
+    "Français": "Demain",
+    "Anglais": "Tomorrow",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0083_Kekereke.mp3",
+    "Russe": "Завтра"
+  },
+  {
+    "ID": "SAG-0084",
+    "Sango": "Ndäpere",
+    "Français": "Matin",
+    "Anglais": "Morning",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0084_Ndäpere.mp3",
+    "Russe": "Утреня"
+  },
+  {
+    "ID": "SAG-0085",
+    "Sango": "Be-kombite",
+    "Français": "Après-midi",
+    "Anglais": "Afternoon",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0085_Be-kombite.mp3",
+    "Russe": "Полдень"
+  },
+  {
+    "ID": "SAG-0086",
+    "Sango": "Lakwi",
+    "Français": "Soir",
+    "Anglais": "Evening",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0086_Lakwi.mp3",
+    "Russe": "Вечер"
+  },
+  {
+    "ID": "SAG-0087",
+    "Sango": "Bï",
+    "Français": "Nuit",
+    "Anglais": "Night",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0087_Bï.mp3",
+    "Russe": "Нюит"
+  },
+  {
+    "ID": "SAG-0088",
+    "Sango": "Dimâsi",
+    "Français": "Semaine",
+    "Anglais": "Week",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0088_Dimâsi.mp3",
+    "Russe": "Неделя"
+  },
+  {
+    "ID": "SAG-0089",
+    "Sango": "Nze",
+    "Français": "Mois",
+    "Anglais": "Month",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0089_Nze.mp3",
+    "Russe": "Месяц"
+  },
+  {
+    "ID": "SAG-0090",
+    "Sango": "Ngû",
+    "Français": "Année",
+    "Anglais": "Year",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0090_Ngû.mp3",
+    "Russe": "Год"
+  },
+  {
+    "ID": "SAG-0091",
+    "Sango": "Bikoua-oko",
+    "Français": "Lundi",
+    "Anglais": "Monday",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0091_Bikoua-oko.mp3",
+    "Russe": "Понедельник"
+  },
+  {
+    "ID": "SAG-0092",
+    "Sango": "Bikou-use",
+    "Français": "Mardi",
+    "Anglais": "Tuesday",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0092_Bikou-use.mp3",
+    "Russe": "Марди"
+  },
+  {
+    "ID": "SAG-0093",
+    "Sango": "Bikoua-ota",
+    "Français": "Mercredi",
+    "Anglais": "Wednesday",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0093_Bikoua-ota.mp3",
+    "Russe": "Среда"
+  },
+  {
+    "ID": "SAG-0094",
+    "Sango": "Bikoua-osio",
+    "Français": "Jeudi",
+    "Anglais": "Thursday",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0094_Bikoua-osio.mp3",
+    "Russe": "ЧЕТВЕРГ"
+  },
+  {
+    "ID": "SAG-0095",
+    "Sango": "Bikoua-oku",
+    "Français": "Vendredi",
+    "Anglais": "Friday",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0095_Bikoua-oku.mp3",
+    "Russe": "Пятница"
+  },
+  {
+    "ID": "SAG-0096",
+    "Sango": "Laposo",
+    "Français": "Samedi",
+    "Anglais": "Saturday",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0096_Laposo.mp3",
+    "Russe": "СУББОТА"
+  },
+  {
+    "ID": "SAG-0097",
+    "Sango": "Layenda",
+    "Français": "Dimanche",
+    "Anglais": "Sunday",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0097_Layenda.mp3",
+    "Russe": "Воскресенье"
+  },
+  {
+    "ID": "SAG-0098",
+    "Sango": "Ngoi",
+    "Français": "Saison",
+    "Anglais": "Season",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0098_Ngoi.mp3",
+    "Russe": "Сезон"
+  },
+  {
+    "ID": "SAG-0099",
+    "Sango": "Ngbonga",
+    "Français": "Heure",
+    "Anglais": "Hour",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0099_Ngbonga.mp3",
+    "Russe": "Час"
+  },
+  {
+    "ID": "SAG-0100",
+    "Sango": "Nze ti Gnyenye",
+    "Français": "Janvier",
+    "Anglais": "January",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0100_Nze_ti_Gnyenye.mp3",
+    "Russe": "январь"
+  },
+  {
+    "ID": "SAG-0101",
+    "Sango": "Vûko",
+    "Français": "Noir",
+    "Anglais": "Black",
+    "Catégorie": "Couleurs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0101_Vûko.mp3",
+    "Russe": "Нуар"
+  },
+  {
+    "ID": "SAG-0102",
+    "Sango": "Vuru",
+    "Français": "Blanc",
+    "Anglais": "White",
+    "Catégorie": "Couleurs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0102_Vuru.mp3",
+    "Russe": "Блан"
+  },
+  {
+    "ID": "SAG-0103",
+    "Sango": "Bengba",
+    "Français": "Rouge",
+    "Anglais": "Red",
+    "Catégorie": "Couleurs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0103_Bengba.mp3",
+    "Russe": "Руж"
+  },
+  {
+    "ID": "SAG-0104",
+    "Sango": "Ngu ngunza",
+    "Français": "Vert",
+    "Anglais": "Green",
+    "Catégorie": "Couleurs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0104_Ngu_ngunza.mp3",
+    "Russe": "Верт"
+  },
+  {
+    "ID": "SAG-0105",
+    "Sango": "Kambiri",
+    "Français": "Jaune",
+    "Anglais": "Yellow",
+    "Catégorie": "Couleurs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0105_Kambiri.mp3",
+    "Russe": "Жон"
+  },
+  {
+    "ID": "SAG-0106",
+    "Sango": "tituu",
+    "Français": "Bleu",
+    "Anglais": "Blue",
+    "Catégorie": "Couleurs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0106_tituu.mp3",
+    "Russe": "Блю"
+  },
+  {
+    "ID": "SAG-0107",
+    "Sango": "Babâ",
+    "Français": "Père",
+    "Anglais": "Father",
+    "Catégorie": "Famille",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0107_Babâ.mp3",
+    "Russe": "Отец"
+  },
+  {
+    "ID": "SAG-0108",
+    "Sango": "Mamâ",
+    "Français": "Mère",
+    "Anglais": "Mother",
+    "Catégorie": "Famille",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0108_Mamâ.mp3",
+    "Russe": "Мать"
+  },
+  {
+    "ID": "SAG-0109",
+    "Sango": "Ita-kôlï",
+    "Français": "Frère",
+    "Anglais": "Brother",
+    "Catégorie": "Famille",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0109_Ita-kôlï.mp3",
+    "Russe": "Брат"
+  },
+  {
+    "ID": "SAG-0110",
+    "Sango": "Ita-wâlï",
+    "Français": "Sœur",
+    "Anglais": "Sister",
+    "Catégorie": "Famille",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0110_Ita-wâlï.mp3",
+    "Russe": "Сестра"
+  },
+  {
+    "ID": "SAG-0111",
+    "Sango": "Kamarade",
+    "Français": "Ami",
+    "Anglais": "Friend",
+    "Catégorie": "Famille",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0111_Kamarade.mp3",
+    "Russe": "Ами"
+  },
+  {
+    "ID": "SAG-0112",
+    "Sango": "Ata koli",
+    "Français": "Grand-père",
+    "Anglais": "Grandfather",
+    "Catégorie": "Famille",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0112_Ata_koli.mp3",
+    "Russe": "Дедушка"
+  },
+  {
+    "ID": "SAG-0113",
+    "Sango": "Ata wali",
+    "Français": "Grand-mère",
+    "Anglais": "Grandmother",
+    "Catégorie": "Famille",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0113_Ata_wali.mp3",
+    "Russe": "Бабушка"
+  },
+  {
+    "ID": "SAG-0114",
+    "Sango": "Koya",
+    "Français": "Oncle",
+    "Anglais": "Uncle",
+    "Catégorie": "Famille",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0114_Koya.mp3",
+    "Russe": "Дядя"
+  },
+  {
+    "ID": "SAG-0115",
+    "Sango": "Homba",
+    "Français": "Tante",
+    "Anglais": "Aunt",
+    "Catégorie": "Famille",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0115_Homba.mp3",
+    "Russe": "Много"
+  },
+  {
+    "ID": "SAG-0116",
+    "Sango": "Kete moleng koli",
+    "Français": "Garçon",
+    "Anglais": "Boy",
+    "Catégorie": "Famille",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0116_Kete_moleng_koli.mp3",
+    "Russe": "Мальчик"
+  },
+  {
+    "ID": "SAG-0117",
+    "Sango": "Kete molenge wali",
+    "Français": "Fille",
+    "Anglais": "Girl",
+    "Catégorie": "Famille",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0117_Kete_molenge_wali.mp3",
+    "Russe": "Девочка"
+  },
+  {
+    "ID": "SAG-0118",
+    "Sango": "Kôbe",
+    "Français": "Nourriture",
+    "Anglais": "Food",
+    "Catégorie": "Nourriture et Boissons",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0118_Kôbe.mp3",
+    "Russe": "Еда"
+  },
+  {
+    "ID": "SAG-0119",
+    "Sango": "Mapa",
+    "Français": "Pain",
+    "Anglais": "Bread",
+    "Catégorie": "Nourriture et Boissons",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0119_Mapa.mp3",
+    "Russe": "Боль"
+  },
+  {
+    "ID": "SAG-0120",
+    "Sango": "Lôssô",
+    "Français": "Riz",
+    "Anglais": "Rice",
+    "Catégorie": "Nourriture et Boissons",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0120_Lôssô.mp3",
+    "Russe": "Риз"
+  },
+  {
+    "ID": "SAG-0121",
+    "Sango": "Nyama",
+    "Français": "Viande",
+    "Anglais": "Meat",
+    "Catégorie": "Nourriture et Boissons",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0121_Nyama.mp3",
+    "Russe": "Мясо"
+  },
+  {
+    "ID": "SAG-0122",
+    "Sango": "Sûsû",
+    "Français": "Poisson",
+    "Anglais": "Fish",
+    "Catégorie": "Nourriture et Boissons",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0122_Sûsû.mp3",
+    "Russe": "Пуассон"
+  },
+  {
+    "ID": "SAG-0123",
+    "Sango": "Lê ti keke",
+    "Français": "Fruit",
+    "Anglais": "Fruit",
+    "Catégorie": "Nourriture et Boissons",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0123_Lê_ti_keke.mp3",
+    "Russe": "Фрукты"
+  },
+  {
+    "ID": "SAG-0124",
+    "Sango": "Kugbe ti kassa",
+    "Français": "Légume",
+    "Anglais": "Vegetable",
+    "Catégorie": "Nourriture et Boissons",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0124_Kugbe_ti_kassa.mp3",
+    "Russe": "Овощной"
+  },
+  {
+    "ID": "SAG-0125",
+    "Sango": "A Te",
+    "Français": "Manger",
+    "Anglais": "Eat",
+    "Catégorie": "Nourriture et Boissons",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0125_A_Te.mp3",
+    "Russe": "Ясли"
+  },
+  {
+    "ID": "SAG-0126",
+    "Sango": "A Nyön",
+    "Français": "Boire",
+    "Anglais": "Drink",
+    "Catégorie": "Nourriture et Boissons",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0126_A_Nyön.mp3",
+    "Russe": "Напиток"
+  },
+  {
+    "ID": "SAG-0127",
+    "Sango": "Kobe anzere na yanga ti mo",
+    "Français": "Bon appétit",
+    "Anglais": "Enjoy your food",
+    "Catégorie": "Nourriture et Boissons",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0127_Kobe_anzere_na_yanga.mp3",
+    "Russe": "Наслаждайтесь едой"
+  },
+  {
+    "ID": "SAG-0128",
+    "Sango": "Dule",
+    "Français": "Lait",
+    "Anglais": "Milk",
+    "Catégorie": "Nourriture et Boissons",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0128_Dule.mp3",
+    "Russe": "Лайт"
+  },
+  {
+    "ID": "SAG-0129",
+    "Sango": "Mafuta",
+    "Français": "Huile",
+    "Anglais": "Oil",
+    "Catégorie": "Nourriture et Boissons",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0129_Mafuta.mp3",
+    "Russe": "Масло"
+  },
+  {
+    "ID": "SAG-0130",
+    "Sango": "Ingo",
+    "Français": "Sel",
+    "Anglais": "Salt",
+    "Catégorie": "Nourriture et Boissons",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0130_Ingo.mp3",
+    "Russe": "Сел"
+  },
+  {
+    "ID": "SAG-0131",
+    "Sango": "Sukani",
+    "Français": "Sucre",
+    "Anglais": "Sugar",
+    "Catégorie": "Nourriture et Boissons",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0131_Sukani.mp3",
+    "Russe": "Сукре"
+  },
+  {
+    "ID": "SAG-0132",
+    "Sango": "Kawa",
+    "Français": "Café",
+    "Anglais": "Coffee",
+    "Catégorie": "Nourriture et Boissons",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0132_Kawa.mp3",
+    "Russe": "Кафе"
+  },
+  {
+    "ID": "SAG-0133",
+    "Sango": "Chaille",
+    "Français": "Thé",
+    "Anglais": "Tea",
+    "Catégorie": "Nourriture et Boissons",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0133_Chaille.mp3",
+    "Russe": "Тэ"
+  },
+  {
+    "ID": "SAG-0134",
+    "Sango": "Samba",
+    "Français": "Bière",
+    "Anglais": "Beer",
+    "Catégorie": "Nourriture et Boissons",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0134_Samba.mp3",
+    "Russe": "Пиво"
+  },
+  {
+    "ID": "SAG-0135",
+    "Sango": "Gara",
+    "Français": "Marché",
+    "Anglais": "Walk",
+    "Catégorie": "Au Marché",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0135_Gara.mp3",
+    "Russe": "Ходить"
+  },
+  {
+    "ID": "SAG-0136",
+    "Sango": "Ginza",
+    "Français": "Argent",
+    "Anglais": "Money",
+    "Catégorie": "Au Marché",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0136_Ginza.mp3",
+    "Russe": "Арджент"
+  },
+  {
+    "ID": "SAG-0137",
+    "Sango": "Ngêrë",
+    "Français": "Prix",
+    "Anglais": "Price",
+    "Catégorie": "Au Marché",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0137_Ngêrë.mp3",
+    "Russe": "Приз"
+  },
+  {
+    "ID": "SAG-0138",
+    "Sango": "Vo",
+    "Français": "Acheter",
+    "Anglais": "Buy",
+    "Catégorie": "Au Marché",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0138_Vo.mp3",
+    "Russe": "Ахетер"
+  },
+  {
+    "ID": "SAG-0139",
+    "Sango": "Ka",
+    "Français": "Vendre",
+    "Anglais": "Sell",
+    "Catégorie": "Au Marché",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0139_Ka.mp3",
+    "Russe": "Продавать"
+  },
+  {
+    "ID": "SAG-0140",
+    "Sango": "Kuta ngêrë",
+    "Français": "Cher",
+    "Anglais": "Dear",
+    "Catégorie": "Au Marché",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0140_Kuta_ngêrë.mp3",
+    "Russe": "Шер"
+  },
+  {
+    "ID": "SAG-0141",
+    "Sango": "Ngêrë nî kete",
+    "Français": "Bon marché",
+    "Anglais": "Cheap",
+    "Catégorie": "Au Marché",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0141_Ngêrë_nî_kete.mp3",
+    "Russe": "Дешевый"
+  },
+  {
+    "ID": "SAG-0142",
+    "Sango": "Zo ti kango ye",
+    "Français": "Vendeur",
+    "Anglais": "Seller",
+    "Catégorie": "Au Marché",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0142_Zo_ti_kango_ye.mp3",
+    "Russe": "Продавец"
+  },
+  {
+    "ID": "SAG-0143",
+    "Sango": "Zo ti vongo ye",
+    "Français": "Acheteur",
+    "Anglais": "Buyer",
+    "Catégorie": "Au Marché",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0143_Zo_ti_vongo_ye.mp3",
+    "Russe": "Покупатель"
+  },
+  {
+    "ID": "SAG-0144",
+    "Sango": "Mosoro ti wen",
+    "Français": "Pièce",
+    "Anglais": "Piece",
+    "Catégorie": "Au Marché",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0144_Mosoro_ti_wen.mp3",
+    "Russe": "Кусок"
+  },
+  {
+    "ID": "SAG-0145",
+    "Sango": "Ngere ti nginza",
+    "Français": "Billet",
+    "Anglais": "Ticket",
+    "Catégorie": "Au Marché",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0145_Ngere_ti_nginza.mp3",
+    "Russe": "Заготовка"
+  },
+  {
+    "ID": "SAG-0146",
+    "Sango": "Mbeti ti nginza",
+    "Français": "Facture",
+    "Anglais": "Bill",
+    "Catégorie": "Au Marché",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0146_Mbeti_ti_nginza.mp3",
+    "Russe": "Фабрика"
+  },
+  {
+    "ID": "SAG-0147",
+    "Sango": "Futa",
+    "Français": "Payer",
+    "Anglais": "Pay",
+    "Catégorie": "Au Marché",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0147_Futa.mp3",
+    "Russe": "Плательщик"
+  },
+  {
+    "ID": "SAG-0148",
+    "Sango": "Da buze",
+    "Français": "Boutique",
+    "Anglais": "Shop",
+    "Catégorie": "Au Marché",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0148_Da_buze.mp3",
+    "Russe": "Бутик"
+  },
+  {
+    "ID": "SAG-0149",
+    "Sango": "Dengo buze",
+    "Français": "Commerce",
+    "Anglais": "Trade",
+    "Catégorie": "Au Marché",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0149_Dengo_buze.mp3",
+    "Russe": "Коммерция"
+  },
+  {
+    "ID": "SAG-0150",
+    "Sango": "Lisolo ti kango ye",
+    "Français": "Négocier",
+    "Anglais": "Negotiate",
+    "Catégorie": "Au Marché",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0150_Lisolo_ti_kango_ye.mp3",
+    "Russe": "Вести переговоры"
+  },
+  {
+    "ID": "SAG-0151",
+    "Sango": "Yeke",
+    "Français": "Être",
+    "Anglais": "Be",
+    "Catégorie": "Verbes Courants",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0151_Yeke.mp3",
+    "Russe": "Быть"
+  },
+  {
+    "ID": "SAG-0152",
+    "Sango": "Yekena",
+    "Français": "Avoir",
+    "Anglais": "To have",
+    "Catégorie": "Verbes Courants",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0152_Yekena.mp3",
+    "Russe": "Иметь"
+  },
+  {
+    "ID": "SAG-0153",
+    "Sango": "Ti gwe",
+    "Français": "Aller",
+    "Anglais": "Go",
+    "Catégorie": "Verbes Courants",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0153_Ti_gwe.mp3",
+    "Russe": "Идти"
+  },
+  {
+    "ID": "SAG-0154",
+    "Sango": "Ga",
+    "Français": "Venir",
+    "Anglais": "Come",
+    "Catégorie": "Verbes Courants",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0154_Ga.mp3",
+    "Russe": "Приходить"
+  },
+  {
+    "ID": "SAG-0155",
+    "Sango": "Sala",
+    "Français": "Faire",
+    "Anglais": "Do",
+    "Catégorie": "Verbes Courants",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0155_Sala.mp3",
+    "Russe": "ярмарка"
+  },
+  {
+    "ID": "SAG-0156",
+    "Sango": "Lîngbi",
+    "Français": "Pouvoir",
+    "Anglais": "Power",
+    "Catégorie": "Verbes Courants",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0156_Lîngbi.mp3",
+    "Russe": "Власть"
+  },
+  {
+    "ID": "SAG-0157",
+    "Sango": "Yê",
+    "Français": "Vouloir",
+    "Anglais": "To want",
+    "Catégorie": "Verbes Courants",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0157_Yê.mp3",
+    "Russe": "Хотеть"
+  },
+  {
+    "ID": "SAG-0158",
+    "Sango": "Tene",
+    "Français": "Dire",
+    "Anglais": "Say",
+    "Catégorie": "Verbes Courants",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0158_Tene.mp3",
+    "Russe": "Ужасный"
+  },
+  {
+    "ID": "SAG-0159",
+    "Sango": "Hinga",
+    "Français": "Savoir",
+    "Anglais": "Know",
+    "Catégorie": "Verbes Courants",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0159_Hinga.mp3",
+    "Russe": "Знать"
+  },
+  {
+    "ID": "SAG-0160",
+    "Sango": "Ba",
+    "Français": "Voir",
+    "Anglais": "See",
+    "Catégorie": "Verbes Courants",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0160_Ba.mp3",
+    "Russe": "Видеть"
+  },
+  {
+    "ID": "SAG-0161",
+    "Sango": "Ma",
+    "Français": "Entendre",
+    "Anglais": "Hear",
+    "Catégorie": "Verbes Courants",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0161_Ma.mp3",
+    "Russe": "Предприниматель"
+  },
+  {
+    "ID": "SAG-0162",
+    "Sango": "Längö",
+    "Français": "Dormir",
+    "Anglais": "Sleep",
+    "Catégorie": "Verbes Courants",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0162_Längö.mp3",
+    "Russe": "Спать"
+  },
+  {
+    "ID": "SAG-0163",
+    "Sango": "Sala kusâra",
+    "Français": "Travailler",
+    "Anglais": "To work",
+    "Catégorie": "Verbes Courants",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0163_Sala_kusâra.mp3",
+    "Russe": "Работать"
+  },
+  {
+    "ID": "SAG-0164",
+    "Sango": "Loro",
+    "Français": "Courir",
+    "Anglais": "Run",
+    "Catégorie": "Verbes Courants",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0164_Loro.mp3",
+    "Russe": "Бегать"
+  },
+  {
+    "ID": "SAG-0165",
+    "Sango": "Tambela",
+    "Français": "Marcher",
+    "Anglais": "To walk",
+    "Catégorie": "Verbes Courants",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0165_Tambela.mp3",
+    "Russe": "ходить"
+  },
+  {
+    "ID": "SAG-0166",
+    "Sango": "Dodo",
+    "Français": "Danser",
+    "Anglais": "To dance",
+    "Catégorie": "Verbes Courants",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0166_Dodo.mp3",
+    "Russe": "Танцор"
+  },
+  {
+    "ID": "SAG-0167",
+    "Sango": "He bia",
+    "Français": "Chanter",
+    "Anglais": "Sing",
+    "Catégorie": "Verbes Courants",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0167_He_bia.mp3",
+    "Russe": "Певица"
+  },
+  {
+    "ID": "SAG-0168",
+    "Sango": "Ngia",
+    "Français": "Rire",
+    "Anglais": "Laugh",
+    "Catégorie": "Verbes Courants",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0168_Ngia.mp3",
+    "Russe": "Смех"
+  },
+  {
+    "ID": "SAG-0169",
+    "Sango": "Toto",
+    "Français": "Pleurer",
+    "Anglais": "Cry",
+    "Catégorie": "Verbes Courants",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0169_Toto.mp3",
+    "Russe": "Плакать"
+  },
+  {
+    "ID": "SAG-0170",
+    "Sango": "Mu",
+    "Français": "Prendre",
+    "Anglais": "Take",
+    "Catégorie": "Verbes Courants",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0170_Mu.mp3",
+    "Russe": "Брать"
+  },
+  {
+    "ID": "SAG-0171",
+    "Sango": "Nzoni",
+    "Français": "Bon",
+    "Anglais": "Good",
+    "Catégorie": "Adjectifs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0171_Nzoni.mp3",
+    "Russe": "Бон"
+  },
+  {
+    "ID": "SAG-0172",
+    "Sango": "Sioni",
+    "Français": "Mauvais",
+    "Anglais": "Bad",
+    "Catégorie": "Adjectifs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0172_Sioni.mp3",
+    "Russe": "Плохой"
+  },
+  {
+    "ID": "SAG-0173",
+    "Sango": "Kota",
+    "Français": "Grand",
+    "Anglais": "Big",
+    "Catégorie": "Adjectifs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0173_Kota.mp3",
+    "Russe": "Гранд"
+  },
+  {
+    "ID": "SAG-0174",
+    "Sango": "Kete",
+    "Français": "Petit",
+    "Anglais": "Little",
+    "Catégorie": "Adjectifs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0174_Kete.mp3",
+    "Russe": "Пети"
+  },
+  {
+    "ID": "SAG-0175",
+    "Sango": "Pendere",
+    "Français": "Beau",
+    "Anglais": "Beautiful",
+    "Catégorie": "Adjectifs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0175_Pendere.mp3",
+    "Russe": "Бо"
+  },
+  {
+    "ID": "SAG-0176",
+    "Sango": "Wâ",
+    "Français": "Chaud",
+    "Anglais": "Hot",
+    "Catégorie": "Adjectifs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0176_Wâ.mp3",
+    "Russe": "Горячий"
+  },
+  {
+    "ID": "SAG-0177",
+    "Sango": "Dë",
+    "Français": "Froid",
+    "Anglais": "Cold",
+    "Catégorie": "Adjectifs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0177_Dë.mp3",
+    "Russe": "Холодный"
+  },
+  {
+    "ID": "SAG-0178",
+    "Sango": "Mingi",
+    "Français": "Beaucoup",
+    "Anglais": "A lot",
+    "Catégorie": "Adjectifs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0178_Mingi.mp3",
+    "Russe": "Много"
+  },
+  {
+    "ID": "SAG-0179",
+    "Sango": "Ge",
+    "Français": "Ici",
+    "Anglais": "Here",
+    "Catégorie": "Adjectifs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0179_Ge.mp3",
+    "Russe": "Ичи"
+  },
+  {
+    "ID": "SAG-0180",
+    "Sango": "Kâ",
+    "Français": "Là-bas",
+    "Anglais": "Over there",
+    "Catégorie": "Adjectifs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0180_Kâ.mp3",
+    "Russe": "Вон там"
+  },
+  {
+    "ID": "SAG-0181",
+    "Sango": "Fadeso",
+    "Français": "Maintenant",
+    "Anglais": "Now",
+    "Catégorie": "Adjectifs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0181_Fadeso.mp3",
+    "Russe": "СЕЙЧАС"
+  },
+  {
+    "ID": "SAG-0182",
+    "Sango": "Hio",
+    "Français": "Rapide",
+    "Anglais": "Fast",
+    "Catégorie": "Adjectifs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0182_Hio.mp3",
+    "Russe": "Быстрый"
+  },
+  {
+    "ID": "SAG-0183",
+    "Sango": "Ngangu",
+    "Français": "Fort",
+    "Anglais": "Strong",
+    "Catégorie": "Adjectifs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0183_Ngangu.mp3",
+    "Russe": "Форт"
+  },
+  {
+    "ID": "SAG-0184",
+    "Sango": "Fini",
+    "Français": "Nouveau",
+    "Anglais": "New",
+    "Catégorie": "Adjectifs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0184_Fini.mp3",
+    "Russe": "модерн"
+  },
+  {
+    "ID": "SAG-0185",
+    "Sango": "Mbakoro",
+    "Français": "Vieux",
+    "Anglais": "Old",
+    "Catégorie": "Adjectifs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0185_Mbakoro.mp3",
+    "Russe": "Старый"
+  },
+  {
+    "ID": "SAG-0186",
+    "Sango": "Senge",
+    "Français": "Facile",
+    "Anglais": "Easy",
+    "Catégorie": "Adjectifs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0186_Senge.mp3",
+    "Russe": "Легкий"
+  },
+  {
+    "ID": "SAG-0187",
+    "Sango": "Kpale",
+    "Français": "Difficile",
+    "Anglais": "Difficult",
+    "Catégorie": "Adjectifs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0187_Kpale.mp3",
+    "Russe": "трудный"
+  },
+  {
+    "ID": "SAG-0188",
+    "Sango": "A nzere na zo",
+    "Français": "Agréable",
+    "Anglais": "Pleasant",
+    "Catégorie": "Adjectifs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0188_A_nzere_na_zo.mp3",
+    "Russe": "Приятный"
+  },
+  {
+    "ID": "SAG-0189",
+    "Sango": "Akonon",
+    "Français": "Large",
+    "Anglais": "Wide",
+    "Catégorie": "Adjectifs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0189_Akonon.mp3",
+    "Russe": "Большой"
+  },
+  {
+    "ID": "SAG-0190",
+    "Sango": "Maseka",
+    "Français": "Jeune",
+    "Anglais": "Young",
+    "Catégorie": "Adjectifs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0190_Maseka.mp3",
+    "Russe": "Молодой"
+  },
+  {
+    "ID": "SAG-0191",
+    "Sango": "Gnegne",
+    "Français": "Janvier",
+    "Anglais": "January",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0191_Gnegne.mp3",
+    "Russe": "январь"
+  },
+  {
+    "ID": "SAG-0192",
+    "Sango": "Folondiki",
+    "Français": "Février",
+    "Anglais": "February",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0192_Folondiki.mp3",
+    "Russe": "ФЕВРАЛЬ"
+  },
+  {
+    "ID": "SAG-0193",
+    "Sango": "Mbangou",
+    "Français": "Mars",
+    "Anglais": "March",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0193_Mbangou.mp3",
+    "Russe": "Марс"
+  },
+  {
+    "ID": "SAG-0194",
+    "Sango": "Ngougbe",
+    "Français": "Avril",
+    "Anglais": "April",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0194_Ngougbe.mp3",
+    "Russe": "Аврил"
+  },
+  {
+    "ID": "SAG-0195",
+    "Sango": "Bilaou",
+    "Français": "Mai",
+    "Anglais": "May",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0195_Bilaou.mp3",
+    "Russe": "Может"
+  },
+  {
+    "ID": "SAG-0196",
+    "Sango": "Fondo",
+    "Français": "Juin",
+    "Anglais": "June",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0196_Fondo.mp3",
+    "Russe": "Июнь"
+  },
+  {
+    "ID": "SAG-0197",
+    "Sango": "Lengoua",
+    "Français": "Juillet",
+    "Anglais": "July",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0197_Lengoua.mp3",
+    "Russe": "Июль"
+  },
+  {
+    "ID": "SAG-0198",
+    "Sango": "Koukourou",
+    "Français": "Août",
+    "Anglais": "August",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0198_Koukourou.mp3",
+    "Russe": "Август"
+  },
+  {
+    "ID": "SAG-0199",
+    "Sango": "Nvouka",
+    "Français": "Septembre",
+    "Anglais": "September",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0199_Nvouka.mp3",
+    "Russe": "Сентябрь"
+  },
+  {
+    "ID": "SAG-0200",
+    "Sango": "Ngberere",
+    "Français": "Octobre",
+    "Anglais": "October",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0200_Ngberere.mp3",
+    "Russe": "Октябрь"
+  },
+  {
+    "ID": "SAG-0201",
+    "Sango": "Nabandourou",
+    "Français": "Novembre",
+    "Anglais": "November",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0201_Nabandourou.mp3",
+    "Russe": "ноябрь"
+  },
+  {
+    "ID": "SAG-0202",
+    "Sango": "Kakaouka",
+    "Français": "Décembre",
+    "Anglais": "December",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0202_Kakaouka.mp3",
+    "Russe": "декабрь"
+  },
+  {
+    "ID": "SAG-0203",
+    "Sango": "Bikoua-osse",
+    "Français": "Mardi",
+    "Anglais": "Tuesday",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0203_Bikoua-osse.mp3",
+    "Russe": "Марди"
+  },
+  {
+    "ID": "SAG-0204",
+    "Sango": "Bikoua-ossio",
+    "Français": "Jeudi",
+    "Anglais": "Thursday",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0204_Bikoua-ossio.mp3",
+    "Russe": "ЧЕТВЕРГ"
+  },
+  {
+    "ID": "SAG-0205",
+    "Sango": "Bikoua-okou",
+    "Français": "Vendredi",
+    "Anglais": "Friday",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0205_Bikoua-okou.mp3",
+    "Russe": "Пятница"
+  },
+  {
+    "ID": "SAG-0206",
+    "Sango": "Laposso",
+    "Français": "Samedi",
+    "Anglais": "Saturday",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0206_Laposso.mp3",
+    "Russe": "СУББОТА"
+  },
+  {
+    "ID": "SAG-0207",
+    "Sango": "Layenga",
+    "Français": "Dimanche",
+    "Anglais": "Sunday",
+    "Catégorie": "Temps et Calendrier",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0207_Layenga.mp3",
+    "Russe": "Воскресенье"
+  },
+  {
+    "ID": "SAG-0208",
+    "Sango": "nyama",
+    "Français": "Animal",
+    "Anglais": "Animal",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0208_nyama.mp3",
+    "Russe": "Животное"
+  },
+  {
+    "ID": "SAG-0209",
+    "Sango": "wôtoro",
+    "Français": "Abeille",
+    "Anglais": "Bee",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0209_wôtoro.mp3",
+    "Russe": "Пчела"
+  },
+  {
+    "ID": "SAG-0210",
+    "Sango": "ngoalö",
+    "Français": "Aigle",
+    "Anglais": "Eagle",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0210_ngoalö.mp3",
+    "Russe": "Орел"
+  },
+  {
+    "ID": "SAG-0211",
+    "Sango": "nyäü",
+    "Français": "Chat",
+    "Anglais": "Cat",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0211_nyäü.mp3",
+    "Russe": "Чат"
+  },
+  {
+    "ID": "SAG-0212",
+    "Sango": "mbârâtâ",
+    "Français": "Cheval",
+    "Anglais": "Horse",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0212_mbârâtâ.mp3",
+    "Russe": "Шеваль"
+  },
+  {
+    "ID": "SAG-0213",
+    "Sango": "wâlï-ngäsa",
+    "Français": "Chèvre",
+    "Anglais": "Goat",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0213_wâlï-ngäsa.mp3",
+    "Russe": "Козел"
+  },
+  {
+    "ID": "SAG-0214",
+    "Sango": "mbo",
+    "Français": "Chien",
+    "Anglais": "Dog",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0214_mbo.mp3",
+    "Russe": "Чиен"
+  },
+  {
+    "ID": "SAG-0215",
+    "Sango": "ngûru",
+    "Français": "Cochon",
+    "Anglais": "Pig",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0215_ngûru.mp3",
+    "Russe": "Свинья"
+  },
+  {
+    "ID": "SAG-0216",
+    "Sango": "kôlï-kôndo",
+    "Français": "Coq",
+    "Anglais": "Rooster",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0216_kôlï-kôndo.mp3",
+    "Russe": "Кок"
+  },
+  {
+    "ID": "SAG-0217",
+    "Sango": "ngundë",
+    "Français": "Crocodile",
+    "Anglais": "Crocodile",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0217_ngundë.mp3",
+    "Russe": "Крокодил"
+  },
+  {
+    "ID": "SAG-0218",
+    "Sango": "doli",
+    "Français": "Eléphant",
+    "Anglais": "Elephant",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0218_doli.mp3",
+    "Russe": "Слон"
+  },
+  {
+    "ID": "SAG-0219",
+    "Sango": "diyän",
+    "Français": "Fourmi",
+    "Anglais": "Ant",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0219_diyän.mp3",
+    "Russe": "Муравей"
+  },
+  {
+    "ID": "SAG-0220",
+    "Sango": "kôlô",
+    "Français": "Girafe",
+    "Anglais": "Giraffe",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0220_kôlô.mp3",
+    "Russe": "Жирафа"
+  },
+  {
+    "ID": "SAG-0221",
+    "Sango": "nzêgê",
+    "Français": "Grenouille",
+    "Anglais": "Frog",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0221_nzêgê.mp3",
+    "Russe": "Лягушка"
+  },
+  {
+    "ID": "SAG-0222",
+    "Sango": "bämarä",
+    "Français": "Lion",
+    "Anglais": "Lion",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0222_bämarä.mp3",
+    "Russe": "Лев"
+  },
+  {
+    "ID": "SAG-0223",
+    "Sango": "taba",
+    "Français": "Mouton",
+    "Anglais": "Sheep",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0223_taba.mp3",
+    "Russe": "Мутон"
+  },
+  {
+    "ID": "SAG-0224",
+    "Sango": "ndeke",
+    "Français": "Oiseau",
+    "Anglais": "Bird",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0224_ndeke.mp3",
+    "Russe": "Птица"
+  },
+  {
+    "ID": "SAG-0225",
+    "Sango": "pûpûlenge",
+    "Français": "Papillon",
+    "Anglais": "Butterfly",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0225_pûpûlenge.mp3",
+    "Russe": "папийон"
+  },
+  {
+    "ID": "SAG-0226",
+    "Sango": "susu",
+    "Français": "Poisson",
+    "Anglais": "Fish",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0226_susu.mp3",
+    "Russe": "Пуассон"
+  },
+  {
+    "ID": "SAG-0227",
+    "Sango": "kôndo",
+    "Français": "Poule",
+    "Anglais": "Chicken",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0227_kôndo.mp3",
+    "Russe": "Курица"
+  },
+  {
+    "ID": "SAG-0228",
+    "Sango": "ngbö",
+    "Français": "Serpent",
+    "Anglais": "Snake",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0228_ngbö.mp3",
+    "Russe": "Змея"
+  },
+  {
+    "ID": "SAG-0229",
+    "Sango": "makâko",
+    "Français": "Singe",
+    "Anglais": "Monkey",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0229_makâko.mp3",
+    "Russe": "Синге"
+  },
+  {
+    "ID": "SAG-0230",
+    "Sango": "wâlï-bâgara",
+    "Français": "Vache",
+    "Anglais": "Cow",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0230_wâlï-bâgara.mp3",
+    "Russe": "Корова"
+  },
+  {
+    "ID": "SAG-0231",
+    "Sango": "Goussa",
+    "Français": "Jute",
+    "Anglais": "Jute",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0231_Goussa.mp3",
+    "Russe": "Джут"
+  },
+  {
+    "ID": "SAG-0232",
+    "Sango": "Côcô",
+    "Français": "Gnetum",
+    "Anglais": "Gnetum",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0232_Côcô.mp3",
+    "Russe": "Гнетум"
+  },
+  {
+    "ID": "SAG-0233",
+    "Sango": "Ngago",
+    "Français": "Tétragone",
+    "Anglais": "Tetragone",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0233_Ngago.mp3",
+    "Russe": "тетрагон"
+  },
+  {
+    "ID": "SAG-0234",
+    "Sango": "Kossö",
+    "Français": "Courge",
+    "Anglais": "Squash",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0234_Kossö.mp3",
+    "Russe": "Давить"
+  },
+  {
+    "ID": "SAG-0235",
+    "Sango": "Vëkë",
+    "Français": "Gombo",
+    "Anglais": "Okra",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0235_Vëkë.mp3",
+    "Russe": "Прокрутка"
+  },
+  {
+    "ID": "SAG-0236",
+    "Sango": "Kaweya",
+    "Français": "Melon",
+    "Anglais": "Melon",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0236_Kaweya.mp3",
+    "Russe": "Дыня"
+  },
+  {
+    "ID": "SAG-0237",
+    "Sango": "Makongo",
+    "Français": "Chenille",
+    "Anglais": "Caterpillar",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0237_Makongo.mp3",
+    "Russe": "Синель"
+  },
+  {
+    "ID": "SAG-0238",
+    "Sango": "Gouï",
+    "Français": "Igname",
+    "Anglais": "Yam",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0238_Gouï.mp3",
+    "Russe": "сладкий картофель"
+  },
+  {
+    "ID": "SAG-0239",
+    "Sango": "Langa",
+    "Français": "Tarot",
+    "Anglais": "Tarot",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0239_Langa.mp3",
+    "Russe": "Таро"
+  },
+  {
+    "ID": "SAG-0240",
+    "Sango": "Bobo",
+    "Français": "Termite ailé",
+    "Anglais": "Winged termite",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0240_Bobo.mp3",
+    "Russe": "Крылатый термит"
+  },
+  {
+    "ID": "SAG-0241",
+    "Sango": "Kangui",
+    "Français": "Termite",
+    "Anglais": "Termite",
+    "Catégorie": "Animaux",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0241_Kangui.mp3",
+    "Russe": "Термит"
+  },
+  {
+    "ID": "SAG-0242",
+    "Sango": "Mangbéré",
+    "Français": "Chikwangue",
+    "Anglais": "Chikwangue",
+    "Catégorie": "Nourriture",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0242_Mangbéré.mp3",
+    "Russe": "Ворона"
+  },
+  {
+    "ID": "SAG-0243",
+    "Sango": "Goungou",
+    "Français": "Champignon",
+    "Anglais": "Mushroom",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0243_Goungou.mp3",
+    "Russe": "Гриб"
+  },
+  {
+    "ID": "SAG-0244",
+    "Sango": "Da ti kangui",
+    "Français": "Termitière",
+    "Anglais": "Termite mound",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0244_Da_ti_kangui.mp3",
+    "Russe": "Термитник"
+  },
+  {
+    "ID": "SAG-0245",
+    "Sango": "Goro",
+    "Français": "Cola",
+    "Anglais": "Cola",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0245_Goro.mp3",
+    "Russe": "Кола"
+  },
+  {
+    "ID": "SAG-0246",
+    "Sango": "Tëne tï guèrê",
+    "Français": "Ponce pierre",
+    "Anglais": "Pumice stone",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0246_Tëne_tï_guèrê.mp3",
+    "Russe": "Пемза"
+  },
+  {
+    "ID": "SAG-0247",
+    "Sango": "Gbokoro",
+    "Français": "Poids pierre",
+    "Anglais": "Stone weight",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0247_Gbokoro.mp3",
+    "Russe": "Вес камня"
+  },
+  {
+    "ID": "SAG-0248",
+    "Sango": "Keke ti kpou",
+    "Français": "Pilon",
+    "Anglais": "Pestle",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0248_Keke_ti_kpou.mp3",
+    "Russe": "Пилон"
+  },
+  {
+    "ID": "SAG-0249",
+    "Sango": "Kpou",
+    "Français": "Mortier",
+    "Anglais": "Mortar",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0249_Kpou.mp3",
+    "Russe": "миномет"
+  },
+  {
+    "ID": "SAG-0250",
+    "Sango": "Yenguerè",
+    "Français": "Tamis",
+    "Anglais": "Sieve",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0250_Yenguerè.mp3",
+    "Russe": "сладость"
+  },
+  {
+    "ID": "SAG-0251",
+    "Sango": "Da ti otoro",
+    "Français": "Ruche",
+    "Anglais": "Hive",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0251_Da_ti_otoro.mp3",
+    "Russe": "Улей"
+  },
+  {
+    "ID": "SAG-0252",
+    "Sango": "Keke ti gozo",
+    "Français": "Spatule en bois",
+    "Anglais": "Wooden spatula",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0252_Keke_ti_gozo.mp3",
+    "Russe": "Деревянная лопаточка"
+  },
+  {
+    "ID": "SAG-0253",
+    "Sango": "Yapula",
+    "Français": "Fenêtre",
+    "Anglais": "Window",
+    "Catégorie": "Maison et Quotidien",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0253_Yapula.mp3",
+    "Russe": "Окно"
+  },
+  {
+    "ID": "SAG-0254",
+    "Sango": "Ngoundjia",
+    "Français": "Feuille de manioc",
+    "Anglais": "Cassava leaf",
+    "Catégorie": "Nourriture",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0254_Ngoundjia.mp3",
+    "Russe": "Лист маниоки"
+  },
+  {
+    "ID": "SAG-0255",
+    "Sango": "Karako",
+    "Français": "Arachide",
+    "Anglais": "Peanut",
+    "Catégorie": "Nourriture",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0255_Karako.mp3",
+    "Russe": "Арахис"
+  },
+  {
+    "ID": "SAG-0256",
+    "Sango": "Sindi",
+    "Français": "Sésame",
+    "Anglais": "Sesame",
+    "Catégorie": "Nourriture",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0256_Sindi.mp3",
+    "Russe": "Кунжут"
+  },
+  {
+    "ID": "SAG-0257",
+    "Sango": "Babolo",
+    "Français": "Patate",
+    "Anglais": "Potato",
+    "Catégorie": "Nourriture",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0257_Babolo.mp3",
+    "Russe": "Картофель"
+  },
+  {
+    "ID": "SAG-0258",
+    "Sango": "Boulée",
+    "Français": "Banane douce",
+    "Anglais": "Sweet banana",
+    "Catégorie": "Nourriture",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0258_Boulée.mp3",
+    "Russe": "Сладкий банан"
+  },
+  {
+    "ID": "SAG-0259",
+    "Sango": "Mbata",
+    "Français": "Siège en tabouret",
+    "Anglais": "Stool seat",
+    "Catégorie": "Maison et Quotidien",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0259_Mbata.mp3",
+    "Russe": "Сиденье табурета"
+  },
+  {
+    "ID": "SAG-0260",
+    "Sango": "Ngou ti kassa",
+    "Français": "Potage",
+    "Anglais": "Soup",
+    "Catégorie": "Nourriture",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0260_Ngou_ti_kassa.mp3",
+    "Russe": "Суп"
+  },
+  {
+    "ID": "SAG-0261",
+    "Sango": "Douke",
+    "Français": "Fournaise",
+    "Anglais": "Furnace",
+    "Catégorie": "Maison et Quotidien",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0261_Douke.mp3",
+    "Russe": "Печь"
+  },
+  {
+    "ID": "SAG-0262",
+    "Sango": "Mafuta ti balawa",
+    "Français": "Huile de karité",
+    "Anglais": "Shea oil",
+    "Catégorie": "Nourriture",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0262_Mafuta_ti_balawa.mp3",
+    "Russe": "Масло Ши"
+  },
+  {
+    "ID": "SAG-0263",
+    "Sango": "Ngou ti gozo",
+    "Français": "Tapioca",
+    "Anglais": "Tapioca",
+    "Catégorie": "Nourriture",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0263_Ngou_ti_gozo.mp3",
+    "Russe": "Тапиока"
+  },
+  {
+    "ID": "SAG-0264",
+    "Sango": "Kelekpa",
+    "Français": "Lit en bambou",
+    "Anglais": "Bamboo bed",
+    "Catégorie": "Maison et Quotidien",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0264_Kelekpa.mp3",
+    "Russe": "Бамбуковая кровать"
+  },
+  {
+    "ID": "SAG-0265",
+    "Sango": "Ngu ngunza",
+    "Français": "Vert",
+    "Anglais": "Green",
+    "Catégorie": "Couleurs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0265_Ngu_ngunza.mp3",
+    "Russe": "Верт"
+  },
+  {
+    "ID": "SAG-0266",
+    "Sango": "Tutuu",
+    "Français": "Bleu",
+    "Anglais": "Blue",
+    "Catégorie": "Couleurs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0266_Tutuu.mp3",
+    "Russe": "Блю"
+  },
+  {
+    "ID": "SAG-0267",
+    "Sango": "Kambiri",
+    "Français": "Jaune",
+    "Anglais": "Yellow",
+    "Catégorie": "Couleurs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0267_Kambiri.mp3",
+    "Russe": "Жон"
+  },
+  {
+    "ID": "SAG-0268",
+    "Sango": "ndimo",
+    "Français": "Orange",
+    "Anglais": "Orange",
+    "Catégorie": "Couleurs",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0268_ndimo.mp3",
+    "Russe": "Апельсин"
+  },
+  {
+    "ID": "SAG-0273",
+    "Sango": "dà",
+    "Français": "Maison / Chez soi",
+    "Anglais": "House / at home",
+    "Catégorie": "Maison et Quotidien",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0273_dà.mp3",
+    "Russe": "Дом / Дома"
+  },
+  {
+    "ID": "SAG-0274",
+    "Sango": "yanga-da",
+    "Français": "Porte",
+    "Anglais": "Door",
+    "Catégorie": "Maison et Quotidien",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0274_yanga-da.mp3",
+    "Russe": "Порте"
+  },
+  {
+    "ID": "SAG-0275",
+    "Sango": "gbagba/gbogbo",
+    "Français": "Lit",
+    "Anglais": "Bed",
+    "Catégorie": "Maison et Quotidien",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0275_gbagba-gbogbo.mp3",
+    "Russe": "Горит"
+  },
+  {
+    "ID": "SAG-0276",
+    "Sango": "yé ti dùti",
+    "Français": "Chaise",
+    "Anglais": "Chair",
+    "Catégorie": "Maison et Quotidien",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0276_yé_ti_dùti.mp3",
+    "Russe": "Шезлонг"
+  },
+  {
+    "ID": "SAG-0277",
+    "Sango": "meza",
+    "Français": "Table",
+    "Anglais": "Table",
+    "Catégorie": "Maison et Quotidien",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0277_meza.mp3",
+    "Russe": "Стол"
+  },
+  {
+    "ID": "SAG-0278",
+    "Sango": "dà ti tongo kobé",
+    "Français": "Cuisine (eau de maison)",
+    "Anglais": "Cooking (house water)",
+    "Catégorie": "Maison et Quotidien",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0278_dà_ti_tongo_kobé.mp3",
+    "Russe": "Приготовление пищи (домашняя вода)"
+  },
+  {
+    "ID": "SAG-0279",
+    "Sango": "li ti dà",
+    "Français": "Toit",
+    "Anglais": "Roof",
+    "Catégorie": "Maison et Quotidien",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0279_li_ti_dà.mp3",
+    "Russe": "Тойт"
+  },
+  {
+    "ID": "SAG-0281",
+    "Sango": "gbagba",
+    "Français": "Mur/cloture",
+    "Anglais": "Wall/fence",
+    "Catégorie": "Maison et Quotidien",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0281_gbagba.mp3",
+    "Russe": "Стена/забор"
+  },
+  {
+    "ID": "SAG-0284",
+    "Sango": "wà",
+    "Français": "Lampe / Lumière",
+    "Anglais": "Lamp / light",
+    "Catégorie": "Maison et Quotidien",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0284_wà.mp3",
+    "Russe": "Лампа / Свет"
+  },
+  {
+    "ID": "SAG-0285",
+    "Sango": "sewa",
+    "Français": "Ma famille",
+    "Anglais": "My family",
+    "Catégorie": "Famille",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0285_sewa.mp3",
+    "Russe": "Моя семья"
+  },
+  {
+    "ID": "SAG-0286",
+    "Sango": "Molengê",
+    "Français": "Enfant (générique)",
+    "Anglais": "Child (generic)",
+    "Catégorie": "Famille",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0286_Molengê.mp3",
+    "Russe": "Ребенок (общий)"
+  },
+  {
+    "ID": "SAG-0287",
+    "Sango": "mbakoro",
+    "Français": "Vieux / Aîné",
+    "Anglais": "Old / elder",
+    "Catégorie": "Famille",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0287_mbakoro.mp3",
+    "Russe": "Старый/Старейшина"
+  },
+  {
+    "ID": "SAG-0288",
+    "Sango": "Baba ti koli",
+    "Français": "Beau-père",
+    "Anglais": "Father-in-law",
+    "Catégorie": "Famille",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0288_Baba_ti_koli.mp3",
+    "Russe": "Тесть"
+  },
+  {
+    "ID": "SAG-0289",
+    "Sango": "mama ti wali",
+    "Français": "Belle-mère",
+    "Anglais": "Mother-in-law",
+    "Catégorie": "Famille",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0289_mama_ti_wali.mp3",
+    "Russe": "Свекровь"
+  },
+  {
+    "ID": "SAG-0290",
+    "Sango": "Sô kôlï",
+    "Français": "Mari",
+    "Anglais": "Husband",
+    "Catégorie": "Famille",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0290_Sô_kôlï.mp3",
+    "Russe": "Мари"
+  },
+  {
+    "ID": "SAG-0291",
+    "Sango": "Sô wâlï",
+    "Français": "Femme (épouse)",
+    "Anglais": "Woman (wife)",
+    "Catégorie": "Famille",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0291_Sô_wâlï.mp3",
+    "Russe": "Женщина (жена)"
+  },
+  {
+    "ID": "SAG-0292",
+    "Sango": "Mbï yeke na ita-kôlï ôko",
+    "Français": "J'ai un frère",
+    "Anglais": "I have a brother",
+    "Catégorie": "Famille",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0292_Mbï_yeke_na_ita-kôlï.mp3",
+    "Russe": "у меня есть брат"
+  },
+  {
+    "ID": "SAG-0305",
+    "Sango": "Poro ti tere",
+    "Français": "Peau",
+    "Anglais": "Skin",
+    "Catégorie": "Corps humain",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0305_Poro_ti_tere.mp3",
+    "Russe": "Кожа"
+  },
+  {
+    "ID": "SAG-0309",
+    "Sango": "Peko ti li",
+    "Français": "La nuque",
+    "Anglais": "The neck",
+    "Catégorie": "Corps humain",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0309_Peko_ti_li.mp3",
+    "Russe": "Шея"
+  },
+  {
+    "ID": "SAG-0311",
+    "Sango": "gere ti lo",
+    "Français": "Genou",
+    "Anglais": "Knee",
+    "Catégorie": "Corps humain",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0311_gere_ti_lo.mp3",
+    "Russe": "Колено"
+  },
+  {
+    "ID": "SAG-0312",
+    "Sango": "Mbï yeke nà kobèlà",
+    "Français": "Je suis malade",
+    "Anglais": "I'm sick",
+    "Catégorie": "Santé",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0312_Mbï_yeke_nà_kobèlà.mp3",
+    "Russe": "Я болен"
+  },
+  {
+    "ID": "SAG-0313",
+    "Sango": "Mbï yeke na nzoni seni",
+    "Français": "Je suis en bonne santé",
+    "Anglais": "I am healthy",
+    "Catégorie": "Santé",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0313_Mbï_yeke_na_nzoni_se.mp3",
+    "Russe": "я здоров"
+  },
+  {
+    "ID": "SAG-0314",
+    "Sango": "kobela ti li",
+    "Français": "Mal de tête",
+    "Anglais": "Headache",
+    "Catégorie": "Santé",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0314_kobela_ti_li.mp3",
+    "Russe": "Головная боль"
+  },
+  {
+    "ID": "SAG-0315",
+    "Sango": "Wanganga",
+    "Français": "Médecin / Docteur",
+    "Anglais": "Doctor / doctor",
+    "Catégorie": "Santé",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0315_Wanganga.mp3",
+    "Russe": "Доктор / Доктор"
+  },
+  {
+    "ID": "SAG-0316",
+    "Sango": "Mungo yoro",
+    "Français": "Médicament",
+    "Anglais": "Medicine",
+    "Catégorie": "Santé",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0316_Mungo_yoro.mp3",
+    "Russe": "Лекарство"
+  },
+  {
+    "ID": "SAG-0317",
+    "Sango": "Mbï yeke kobela ti li",
+    "Français": "J'ai mal à la tête",
+    "Anglais": "I have a headache",
+    "Catégorie": "Santé",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0317_Mbï_yeke_kobela_ti_l.mp3",
+    "Russe": "У меня болит голова"
+  },
+  {
+    "ID": "SAG-0318",
+    "Sango": "Mbï yeke na kobela ti yà",
+    "Français": "J'ai mal au ventre",
+    "Anglais": "I have a stomach ache",
+    "Catégorie": "Santé",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0318_Mbï_yeke_na_kobela_t.mp3",
+    "Russe": "У меня болит желудок"
+  },
+  {
+    "ID": "SAG-0320",
+    "Sango": "tèrè a de",
+    "Français": "Fièvre",
+    "Anglais": "Fever",
+    "Catégorie": "Santé",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0320_tèrè_a_de.mp3",
+    "Russe": "Высокая температура"
+  },
+  {
+    "ID": "SAG-0321",
+    "Sango": "Nzara ti ngu asara mbi",
+    "Français": "J'ai soif",
+    "Anglais": "I'm thirsty",
+    "Catégorie": "Santé",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0321_Nzara_ti_ngu_asara_m.mp3",
+    "Russe": "Я хочу пить"
+  },
+  {
+    "ID": "SAG-0322",
+    "Sango": "Nzara asara mbi",
+    "Français": "J'ai faim",
+    "Anglais": "I'm hungry",
+    "Catégorie": "Santé",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0322_Nzara_asara_mbi.mp3",
+    "Russe": "Я голоден"
+  },
+  {
+    "ID": "SAG-0323",
+    "Sango": "Yâ ngangö",
+    "Français": "Force / Énergie",
+    "Anglais": "Strength/energy",
+    "Catégorie": "Santé",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0323_Yâ_ngangö.mp3",
+    "Russe": "Сила/Энергия"
+  },
+  {
+    "ID": "SAG-0324",
+    "Sango": "danganga",
+    "Français": "Hôpital",
+    "Anglais": "Hospital",
+    "Catégorie": "Santé",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0324_danganga.mp3",
+    "Russe": "Больница"
+  },
+  {
+    "ID": "SAG-0325",
+    "Sango": "Tonga",
+    "Français": "Vaccin",
+    "Anglais": "Vaccine",
+    "Catégorie": "Santé",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0325_Tonga.mp3",
+    "Russe": "Вакцина"
+  },
+  {
+    "ID": "SAG-0326",
+    "Sango": "Kété Wanganga",
+    "Français": "Infirmier / infirmière",
+    "Anglais": "Nurse",
+    "Catégorie": "Santé",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0326_Kété_Wanganga.mp3",
+    "Russe": "Медсестра"
+  },
+  {
+    "ID": "SAG-0327",
+    "Sango": "Kutukutu",
+    "Français": "Voiture",
+    "Anglais": "Car",
+    "Catégorie": "Transport",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0327_Kutukutu.mp3",
+    "Russe": "Машина"
+  },
+  {
+    "ID": "SAG-0329",
+    "Sango": "légué",
+    "Français": "Route / Chemin",
+    "Anglais": "Road / path",
+    "Catégorie": "Transport",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0329_légué.mp3",
+    "Russe": "Дорога/Путь"
+  },
+  {
+    "ID": "SAG-0330",
+    "Sango": "Ti gwe na",
+    "Français": "Aller à...",
+    "Anglais": "Go to...",
+    "Catégorie": "Transport",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0330_Ti_gwe_na.mp3",
+    "Russe": "Перейти к..."
+  },
+  {
+    "ID": "SAG-0331",
+    "Sango": "Mbï yeke gwe na",
+    "Français": "Je vais à...",
+    "Anglais": "I'm going to...",
+    "Catégorie": "Transport",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0331_Mbï_yeke_gwe_na.mp3",
+    "Russe": "Я собираюсь..."
+  },
+  {
+    "ID": "SAG-0333",
+    "Sango": "Ngo",
+    "Français": "Pirogue / Bateau",
+    "Anglais": "Canoe / boat",
+    "Catégorie": "Transport",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0333_Ngo.mp3",
+    "Russe": "Каноэ / Лодка"
+  },
+  {
+    "ID": "SAG-0334",
+    "Sango": "lapara",
+    "Français": "Avion",
+    "Anglais": "Plane",
+    "Catégorie": "Transport",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0334_lapara.mp3",
+    "Russe": "Самолет"
+  },
+  {
+    "ID": "SAG-0335",
+    "Sango": "Aluti",
+    "Français": "Arrêter / S'arrêter",
+    "Anglais": "Stop / stop",
+    "Catégorie": "Transport",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0335_Aluti.mp3",
+    "Russe": "Стоп / Стоп"
+  },
+  {
+    "ID": "SAG-0336",
+    "Sango": "Mon yeke gue na ndo wa",
+    "Français": "Où est-ce que tu vas ?",
+    "Anglais": "Where are you going?",
+    "Catégorie": "Transport",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0336_Mon_yeke_gue_na_ndo_.mp3",
+    "Russe": "Куда ты идешь?"
+  },
+  {
+    "ID": "SAG-0337",
+    "Sango": "Mbi yeke gue na ndo wa?",
+    "Français": "Où est... ?",
+    "Anglais": "West... ?",
+    "Catégorie": "Transport",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0337_Mbi_yeke_gue_na_ndo_.mp3",
+    "Russe": "Запад... ?"
+  },
+  {
+    "ID": "SAG-0338",
+    "Sango": "Ndo ti lekengo oto",
+    "Français": "Garage",
+    "Anglais": "Garage",
+    "Catégorie": "Transport",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0338_Ndo_ti_lekengo_oto.mp3",
+    "Russe": "Гараж"
+  },
+  {
+    "ID": "SAG-0339",
+    "Sango": "gbagbara",
+    "Français": "Pont",
+    "Anglais": "Bridge",
+    "Catégorie": "Transport",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0339_gbagbara.mp3",
+    "Russe": "Понт"
+  },
+  {
+    "ID": "SAG-0340",
+    "Sango": "Ngata",
+    "Français": "Ville",
+    "Anglais": "City",
+    "Catégorie": "Transport",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0340_Ngata.mp3",
+    "Russe": "Вилле"
+  },
+  {
+    "ID": "SAG-0341",
+    "Sango": "Kete Ködörö",
+    "Français": "Village",
+    "Anglais": "Village",
+    "Catégorie": "Transport",
+    "Piste Audio": "Piste 3",
+    "Fichier Audio": "SAG-0341_Kete_Ködörö.mp3",
+    "Russe": "Деревня"
+  },
+  {
+    "ID": "SAG-0342",
+    "Sango": "Mbï yeke na ngia",
+    "Français": "Je suis content(e)",
+    "Anglais": "I am happy",
+    "Catégorie": "Émotions",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0342_Mbï_yeke_na_ngia.mp3",
+    "Russe": "я счастлив"
+  },
+  {
+    "ID": "SAG-0343",
+    "Sango": "Mbï yeke Vundu",
+    "Français": "Je suis triste",
+    "Anglais": "I'm sad",
+    "Catégorie": "Émotions",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0343_Mbï_yeke_Vundu.mp3",
+    "Russe": "Мне грустно"
+  },
+  {
+    "ID": "SAG-0344",
+    "Sango": "Mbï yeke Mbétö",
+    "Français": "J'ai peur",
+    "Anglais": "I'm afraid",
+    "Catégorie": "Émotions",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0344_Mbï_yeke_Mbétö.mp3",
+    "Russe": "Боюсь"
+  },
+  {
+    "ID": "SAG-0345",
+    "Sango": "Mbï yeke ngönzö",
+    "Français": "Je suis en colère",
+    "Anglais": "I'm angry",
+    "Catégorie": "Émotions",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0345_Mbï_yeke_ngönzö.mp3",
+    "Russe": "я зол"
+  },
+  {
+    "ID": "SAG-0346",
+    "Sango": "Mbï yè mon",
+    "Français": "Je t'aime",
+    "Anglais": "I love you",
+    "Catégorie": "Émotions",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0346_Mbï_yè_mon.mp3",
+    "Russe": "Я тебя люблю"
+  },
+  {
+    "ID": "SAG-0347",
+    "Sango": "Vundu",
+    "Français": "Tristesse",
+    "Anglais": "Sadness",
+    "Catégorie": "Émotions",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0347_Vundu.mp3",
+    "Russe": "Грусть"
+  },
+  {
+    "ID": "SAG-0348",
+    "Sango": "Mbétö",
+    "Français": "Peur",
+    "Anglais": "Fear",
+    "Catégorie": "Émotions",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0348_Mbétö.mp3",
+    "Russe": "Страх"
+  },
+  {
+    "ID": "SAG-0349",
+    "Sango": "Ngönzö",
+    "Français": "Colère",
+    "Anglais": "Anger",
+    "Catégorie": "Émotions",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0349_Ngönzö.mp3",
+    "Russe": "Злость"
+  },
+  {
+    "ID": "SAG-0350",
+    "Sango": "Ndoyè",
+    "Français": "Amour",
+    "Anglais": "Love",
+    "Catégorie": "Émotions",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0350_Ndoyè.mp3",
+    "Russe": "Амур"
+  },
+  {
+    "ID": "SAG-0352",
+    "Sango": "Mbi yeke na fandara",
+    "Français": "Je suis fier/fière",
+    "Anglais": "I am proud",
+    "Catégorie": "Émotions",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0352_Mbi_yeke_na_fandara.mp3",
+    "Russe": "Я горжусь"
+  },
+  {
+    "ID": "SAG-0354",
+    "Sango": "Kanga Bè",
+    "Français": "Courage",
+    "Anglais": "Courage",
+    "Catégorie": "Émotions",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0354_Kanga_Bè.mp3",
+    "Russe": "Храбрость"
+  },
+  {
+    "ID": "SAG-0355",
+    "Sango": "Kamènè",
+    "Français": "Honte",
+    "Anglais": "Shame",
+    "Catégorie": "Émotions",
+    "Piste Audio": "Piste 2",
+    "Fichier Audio": "SAG-0355_Kamènè.mp3",
+    "Russe": "Стыд"
+  },
+  {
+    "ID": "SAG-0356",
+    "Sango": "dambeti",
+    "Français": "École",
+    "Anglais": "School",
+    "Catégorie": "École et Éducation",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0356_dambeti.mp3",
+    "Russe": "школа"
+  },
+  {
+    "ID": "SAG-0357",
+    "Sango": "manda",
+    "Français": "Apprendre",
+    "Anglais": "Learn",
+    "Catégorie": "École et Éducation",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0357_manda.mp3",
+    "Russe": "Запомнить"
+  },
+  {
+    "ID": "SAG-0358",
+    "Sango": "wafango mbeti",
+    "Français": "Enseignant / Professeur",
+    "Anglais": "Teacher / professor",
+    "Catégorie": "École et Éducation",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0358_wafango_mbeti.mp3",
+    "Russe": "Преподаватель / профессор"
+  },
+  {
+    "ID": "SAG-0359",
+    "Sango": "Mbï yeke manda sango",
+    "Français": "J'apprends le sango",
+    "Anglais": "I'm learning sango",
+    "Catégorie": "École et Éducation",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0359_Mbï_yeke_manda_sango.mp3",
+    "Russe": "Я учу Санго"
+  },
+  {
+    "ID": "SAG-0360",
+    "Sango": "gbuku",
+    "Français": "Livre",
+    "Anglais": "Book",
+    "Catégorie": "École et Éducation",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0360_gbuku.mp3",
+    "Russe": "Книга"
+  },
+  {
+    "ID": "SAG-0361",
+    "Sango": "li ti mbeti",
+    "Français": "Stylo / Crayon",
+    "Anglais": "Pen / pencil",
+    "Catégorie": "École et Éducation",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0361_li_ti_mbeti.mp3",
+    "Russe": "Ручка / карандаш"
+  },
+  {
+    "ID": "SAG-0362",
+    "Sango": "Ti su mbeti",
+    "Français": "Écrire",
+    "Anglais": "To write",
+    "Catégorie": "École et Éducation",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0362_Ti_su_mbeti.mp3",
+    "Russe": "Письменность"
+  },
+  {
+    "ID": "SAG-0363",
+    "Sango": "Tënë",
+    "Français": "Parler",
+    "Anglais": "Talk",
+    "Catégorie": "École et Éducation",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0363_Tënë.mp3",
+    "Russe": "Речь"
+  },
+  {
+    "ID": "SAG-0364",
+    "Sango": "ma",
+    "Français": "Entendre / Comprendre",
+    "Anglais": "Hear / understand",
+    "Catégorie": "École et Éducation",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0364_ma.mp3",
+    "Russe": "Услышать / понять"
+  },
+  {
+    "ID": "SAG-0365",
+    "Sango": "Mbï ma nzoni ape",
+    "Français": "Je comprends le sango",
+    "Anglais": "I understand sango",
+    "Catégorie": "École et Éducation",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0365_Mbï_ma_nzoni_ape.mp3",
+    "Russe": "Я понимаю Санго"
+  },
+  {
+    "ID": "SAG-0366",
+    "Sango": "Mbï ma nzoni ape",
+    "Français": "Je ne comprends pas",
+    "Anglais": "I don't understand",
+    "Catégorie": "École et Éducation",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0366_Mbï_ma_nzoni_ape.mp3",
+    "Russe": "Я не понимаю. "
+  },
+  {
+    "ID": "SAG-0367",
+    "Sango": "Sara tï tënë yeke",
+    "Français": "Parle plus lentement s'il te plaît",
+    "Anglais": "Speak more slowly please",
+    "Catégorie": "École et Éducation",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0367_Sara_tï_tënë_yeke.mp3",
+    "Russe": "Говори немного помедленнее, пожалуйста."
+  },
+  {
+    "ID": "SAG-0368",
+    "Sango": "yanda ti sango",
+    "Français": "Langue sango",
+    "Anglais": "Sango language",
+    "Catégorie": "École et Éducation",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0368_yanda_ti_sango.mp3",
+    "Russe": "Язык санго"
+  },
+  {
+    "ID": "SAG-0369",
+    "Sango": "yanga ti farânzi",
+    "Français": "Langue française",
+    "Anglais": "French language",
+    "Catégorie": "École et Éducation",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0369_yanga_ti_farânzi.mp3",
+    "Russe": "Французский язык"
+  },
+  {
+    "ID": "SAG-0370",
+    "Sango": "hinga",
+    "Français": "Connaissance",
+    "Anglais": "Awareness",
+    "Catégorie": "École et Éducation",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0370_hinga.mp3",
+    "Russe": "Знание"
+  },
+  {
+    "ID": "SAG-0371",
+    "Sango": "Nzapä",
+    "Français": "Dieu",
+    "Anglais": "God",
+    "Catégorie": "Religion et Spiritualité",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0371_Nzapä.mp3",
+    "Russe": "Dieu"
+  },
+  {
+    "ID": "SAG-0372",
+    "Sango": "deba nzoni",
+    "Français": "Bénédiction",
+    "Anglais": "Blessing",
+    "Catégorie": "Religion et Spiritualité",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0372_deba_nzoni.mp3",
+    "Russe": "Благословение"
+  },
+  {
+    "ID": "SAG-0373",
+    "Sango": "Töngana Nzapä ayé",
+    "Français": "Si Dieu le veut",
+    "Anglais": "If god wills",
+    "Catégorie": "Religion et Spiritualité",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0373_Töngana_Nzapä_ayé.mp3",
+    "Russe": "С Божьей помощью..."
+  },
+  {
+    "ID": "SAG-0374",
+    "Sango": "Dà tî Nzapä",
+    "Français": "Église / Mosquée / Maison de Dieu",
+    "Anglais": "Church / mosque / house of god",
+    "Catégorie": "Religion et Spiritualité",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0374_Dà_tî_Nzapä.mp3",
+    "Russe": "Церковь / Мечеть / Дом Божий"
+  },
+  {
+    "ID": "SAG-0375",
+    "Sango": "sambela",
+    "Français": "Prière",
+    "Anglais": "Prayer",
+    "Catégorie": "Religion et Spiritualité",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0375_sambela.mp3",
+    "Russe": "Молитва"
+  },
+  {
+    "ID": "SAG-0376",
+    "Sango": "Mbï Sambela",
+    "Français": "Je prie",
+    "Anglais": "I pray",
+    "Catégorie": "Religion et Spiritualité",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0376_Mbï_Sambela.mp3",
+    "Russe": "Я молюсь"
+  },
+  {
+    "ID": "SAG-0377",
+    "Sango": "Ndä tî Nzapä",
+    "Français": "Grâce de Dieu",
+    "Anglais": "Grace of god",
+    "Catégorie": "Religion et Spiritualité",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0377_Ndä_tî_Nzapä.mp3",
+    "Russe": "Благодать Божия"
+  },
+  {
+    "ID": "SAG-0378",
+    "Sango": "Matanga",
+    "Français": "Célébration / Fête",
+    "Anglais": "Celebration / party",
+    "Catégorie": "Religion et Spiritualité",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0378_Matanga.mp3",
+    "Russe": "Празднование / вечеринка"
+  },
+  {
+    "ID": "SAG-0379",
+    "Sango": "Mbï yeke zo tî Bângî",
+    "Français": "Je suis de Bangui",
+    "Anglais": "I am from bangui",
+    "Catégorie": "Phrases du Quotidien",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0379_Mbï_yeke_zo_tî_Bângî.mp3",
+    "Russe": "Я из Банги"
+  },
+  {
+    "ID": "SAG-0380",
+    "Sango": "Mbï yeke zo tî RCA",
+    "Français": "Je suis de la RCA",
+    "Anglais": "I am from the car",
+    "Catégorie": "Phrases du Quotidien",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0380_Mbï_yeke_zo_tî_RCA.mp3",
+    "Russe": "Я из машины"
+  },
+  {
+    "ID": "SAG-0381",
+    "Sango": "Mbï tënë sango nzoni pe",
+    "Français": "Je ne parle pas bien sango",
+    "Anglais": "I don't speak sango well",
+    "Catégorie": "Phrases du Quotidien",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0381_Mbï_tënë_sango_nzoni.mp3",
+    "Russe": "Я плохо говорю на санго"
+  },
+  {
+    "ID": "SAG-0382",
+    "Sango": "Mbï yeke Manda Sango",
+    "Français": "J'apprends le sango avec Manda Sango",
+    "Anglais": "I'm learning sango with manda sango",
+    "Catégorie": "Phrases du Quotidien",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0382_Mbï_yeke_Manda_Sango.mp3",
+    "Russe": "Я учу Санго с Мандой Санго"
+  },
+  {
+    "ID": "SAG-0383",
+    "Sango": "Nzoni, mbï gû",
+    "Français": "Oui, je comprends",
+    "Anglais": "Yes, i understand",
+    "Catégorie": "Phrases du Quotidien",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0383_Nzoni,_mbï_gû.mp3",
+    "Russe": "—Да, поняла!"
+  },
+  {
+    "ID": "SAG-0384",
+    "Sango": "Mo lingbi ti kiri tï tene tënë so",
+    "Français": "Peux-tu répéter ?",
+    "Anglais": "Can you repeat?",
+    "Catégorie": "Phrases du Quotidien",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0384_Mo_lingbi_ti_kiri_tï.mp3",
+    "Russe": "Можешь повторить?"
+  },
+  {
+    "ID": "SAG-0385",
+    "Sango": "tënë farânzi...?",
+    "Français": "Comment dit-on ... en français ?",
+    "Anglais": "How do you say... in french?",
+    "Catégorie": "Phrases du Quotidien",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0385_tënë_farânzi...?.mp3",
+    "Russe": "Как сказать ... по-французски?"
+  },
+  {
+    "ID": "SAG-0386",
+    "Sango": "tënë sango ... ?",
+    "Français": "Comment dit-on ... en sango ?",
+    "Anglais": "How do you say... in sango?",
+    "Catégorie": "Phrases du Quotidien",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0386_tënë_sango_..._?.mp3",
+    "Russe": "Как сказать ... на санго?"
+  },
+  {
+    "ID": "SAG-0387",
+    "Sango": "Mbï yeke tè kôbe",
+    "Français": "Je mange",
+    "Anglais": "I'm eating",
+    "Catégorie": "Phrases du Quotidien",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0387_Mbï_yeke_tè_kôbe.mp3",
+    "Russe": "Я кушаю."
+  },
+  {
+    "ID": "SAG-0388",
+    "Sango": "Mbï yeke lango",
+    "Français": "Je dors",
+    "Anglais": "I sleep",
+    "Catégorie": "Phrases du Quotidien",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0388_Mbï_yeke_lango.mp3",
+    "Russe": "Я сплю"
+  },
+  {
+    "ID": "SAG-0389",
+    "Sango": "Mbï yeke kua",
+    "Français": "Je travaille",
+    "Anglais": "I'm working",
+    "Catégorie": "Phrases du Quotidien",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0389_Mbï_yeke_kua.mp3",
+    "Russe": "Я работаю."
+  },
+  {
+    "ID": "SAG-0390",
+    "Sango": "Kua tî mo nye?",
+    "Français": "Quel est ton travail ?",
+    "Anglais": "What is your job?",
+    "Catégorie": "Phrases du Quotidien",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0390_Kua_tî_mo_nye?.mp3",
+    "Russe": "Какова ваша работа?"
+  },
+  {
+    "ID": "SAG-0391",
+    "Sango": "Mbï sara kua na...",
+    "Français": "Je travaille à / en tant que...",
+    "Anglais": "I work at/as...",
+    "Catégorie": "Phrases du Quotidien",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0391_Mbï__sara_kua_na....mp3",
+    "Russe": "Я работаю в /как..."
+  },
+  {
+    "ID": "SAG-0392",
+    "Sango": "duti nzoni",
+    "Français": "Portez-vous bien",
+    "Anglais": "Be well",
+    "Catégorie": "Phrases du Quotidien",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0392_duti_nzoni.mp3",
+    "Russe": "Будь здорова!"
+  },
+  {
+    "ID": "SAG-0393",
+    "Sango": "ti kiri",
+    "Français": "Revenir",
+    "Anglais": "To come back",
+    "Catégorie": "Phrases du Quotidien",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0393_ti_kiri.mp3",
+    "Russe": "Вернуть"
+  },
+  {
+    "ID": "SAG-0394",
+    "Sango": "ngba",
+    "Français": "Rester",
+    "Anglais": "Stay",
+    "Catégorie": "Phrases du Quotidien",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0394_ngba.mp3",
+    "Russe": "остаться"
+  },
+  {
+    "ID": "SAG-0395",
+    "Sango": "Eyeke bà tèrè",
+    "Français": "Bientôt de retour / À bientôt",
+    "Anglais": "Back soon / see you soon",
+    "Catégorie": "Phrases du Quotidien",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0395_Eyeke_bà_tèrè.mp3",
+    "Russe": "Скоро вернусь / До скорой встречи"
+  },
+  {
+    "ID": "SAG-0396",
+    "Sango": "Là",
+    "Français": "Soleil / Jour",
+    "Anglais": "Sun / day",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0396_Là.mp3",
+    "Russe": "Солнце / день"
+  },
+  {
+    "ID": "SAG-0397",
+    "Sango": "nze",
+    "Français": "Lune",
+    "Anglais": "Moon",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0397_nze.mp3",
+    "Russe": "Луна"
+  },
+  {
+    "ID": "SAG-0398",
+    "Sango": "Tongolo",
+    "Français": "Étoile",
+    "Anglais": "Star",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0398_Tongolo.mp3",
+    "Russe": "Звезда"
+  },
+  {
+    "ID": "SAG-0399",
+    "Sango": "ngu nzapa",
+    "Français": "Pluie",
+    "Anglais": "Rain",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0399_ngu_nzapa.mp3",
+    "Russe": "Дождь"
+  },
+  {
+    "ID": "SAG-0400",
+    "Sango": "Pupu",
+    "Français": "Vent",
+    "Anglais": "Wind",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0400_Pupu.mp3",
+    "Russe": "* Ветер"
+  },
+  {
+    "ID": "SAG-0401",
+    "Sango": "Ngü",
+    "Français": "Eau / Rivière",
+    "Anglais": "Water / river",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0401_Ngü.mp3",
+    "Russe": "Вода / Река"
+  },
+  {
+    "ID": "SAG-0402",
+    "Sango": "wà",
+    "Français": "Feu",
+    "Anglais": "Fire",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0402_wà.mp3",
+    "Russe": "Огонь"
+  },
+  {
+    "ID": "SAG-0403",
+    "Sango": "sese",
+    "Français": "Terre / Sol",
+    "Anglais": "Earth / soil",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0403_sese.mp3",
+    "Russe": "Земля Земля"
+  },
+  {
+    "ID": "SAG-0404",
+    "Sango": "ngonda",
+    "Français": "Forêt",
+    "Anglais": "Forest",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0404_ngonda.mp3",
+    "Russe": "Леса"
+  },
+  {
+    "ID": "SAG-0405",
+    "Sango": "hoto",
+    "Français": "Montagne",
+    "Anglais": "Mountain",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0405_hoto.mp3",
+    "Russe": "Гора"
+  },
+  {
+    "ID": "SAG-0406",
+    "Sango": "yanga ti ngu",
+    "Français": "Rive / Berge",
+    "Anglais": "Shore / bank",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0406_yanga_ti_ngu.mp3",
+    "Russe": "Банк / Берге"
+  },
+  {
+    "ID": "SAG-0407",
+    "Sango": "Gbàko",
+    "Français": "Savane",
+    "Anglais": "Savannah",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0407_Gbàko.mp3",
+    "Russe": "Саванна"
+  },
+  {
+    "ID": "SAG-0408",
+    "Sango": "tene",
+    "Français": "Pierre / Rocher",
+    "Anglais": "Stone / rock",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0408_tene.mp3",
+    "Russe": "Камень / скала"
+  },
+  {
+    "ID": "SAG-0409",
+    "Sango": "Kötä ngü",
+    "Français": "Grand fleuve (Oubangui)",
+    "Anglais": "Great river (oubangui)",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0409_Kötä_ngü.mp3",
+    "Russe": "Великая река (Убанги)"
+  },
+  {
+    "ID": "SAG-0410",
+    "Sango": "Bépkà",
+    "Français": "Orage / Tonnerre",
+    "Anglais": "Storm / thunder",
+    "Catégorie": "Nature et Quotidien",
+    "Piste Audio": "Piste 4",
+    "Fichier Audio": "SAG-0410_Bépkà.mp3",
+    "Russe": "Гроза / Гром"
+  },
+  {
+    "ID": "SAG-0411",
+    "Sango": "Mbï",
+    "Français": "Je / Moi",
+    "Anglais": "I / me",
+    "Catégorie": "Grammaire - Pronoms",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0411_Mbï.mp3",
+    "Russe": "I / Me"
+  },
+  {
+    "ID": "SAG-0412",
+    "Sango": "Mo",
+    "Français": "Tu / Toi",
+    "Anglais": "You / you",
+    "Catégorie": "Grammaire - Pronoms",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0412_Mo.mp3",
+    "Russe": "Вы / Вы"
+  },
+  {
+    "ID": "SAG-0413",
+    "Sango": "Ala",
+    "Français": "Ils / Eux / Vous (pluriel)",
+    "Anglais": "They/them/you (plural)",
+    "Catégorie": "Grammaire - Pronoms",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0413_Ala.mp3",
+    "Russe": "Они / Они / Вы (множественное число)"
+  },
+  {
+    "ID": "SAG-0414",
+    "Sango": "Lo",
+    "Français": "Il / Elle / Lui",
+    "Anglais": "He/she/him",
+    "Catégorie": "Grammaire - Pronoms",
+    "Piste Audio": "Piste 1",
+    "Fichier Audio": "SAG-0414_Lo.mp3",
+    "Russe": "Он / Она / Он"
+  },
+  {
+    "ID": "SAG-0415",
+    "Sango": "Tï",
+    "Français": "De / Marqueur possessif",
+    "Anglais": "From / possessive marker",
+    "Catégorie": "Grammaire - Marqueurs",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0415_Tï.mp3",
+    "Russe": "От /Собственный маркер"
+  },
+  {
+    "ID": "SAG-0416",
+    "Sango": "Na",
+    "Français": "À / Avec / Et",
+    "Anglais": "To / with / and",
+    "Catégorie": "Grammaire - Marqueurs",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0416_Na.mp3",
+    "Russe": "Кому / С / И"
+  },
+  {
+    "ID": "SAG-0417",
+    "Sango": "Âpe / Pe",
+    "Français": "Ne...pas (négation)",
+    "Anglais": "Don't...not (negation)",
+    "Catégorie": "Grammaire - Marqueurs",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0417_Âpe_-_Pe.mp3",
+    "Russe": "Не...не (отрицание)"
+  },
+  {
+    "ID": "SAG-0420",
+    "Sango": "Bî",
+    "Français": "Nuit",
+    "Anglais": "Night",
+    "Catégorie": "Grammaire - Marqueurs",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0420_Bî.mp3",
+    "Russe": "Ночь"
+  },
+  {
+    "ID": "SAG-0421",
+    "Sango": "yêkê",
+    "Français": "Lentement / Doucement",
+    "Anglais": "Slowly / gently",
+    "Catégorie": "Grammaire - Adverbes",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0421_yêkê.mp3",
+    "Russe": "Медленно / Аккуратно"
+  },
+  {
+    "ID": "SAG-0422",
+    "Sango": "kété",
+    "Français": "Peu",
+    "Anglais": "Little",
+    "Catégorie": "Grammaire - Adverbes",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0422_kété.mp3",
+    "Russe": "Меньше"
+  },
+  {
+    "ID": "SAG-0424",
+    "Sango": "Kôdë",
+    "Français": "Seulement",
+    "Anglais": "Only",
+    "Catégorie": "Grammaire - Adverbes",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0424_Kôdë.mp3",
+    "Russe": "Только"
+  },
+  {
+    "ID": "SAG-0425",
+    "Sango": "Töngana",
+    "Français": "Si / Quand",
+    "Anglais": "If / when",
+    "Catégorie": "Grammaire - Conjonctions",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0425_Töngana.mp3",
+    "Russe": "Если / Когда"
+  },
+  {
+    "ID": "SAG-0426",
+    "Sango": "Kötä",
+    "Français": "Grand / Beaucoup",
+    "Anglais": "Large / many",
+    "Catégorie": "Grammaire - Adjectifs",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0426_Kötä.mp3",
+    "Russe": "Большой / много"
+  },
+  {
+    "ID": "SAG-0427",
+    "Sango": "Kété",
+    "Français": "Petit",
+    "Anglais": "Little",
+    "Catégorie": "Grammaire - Adjectifs",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0427_Kété.mp3",
+    "Russe": "Мелкий"
+  },
+  {
+    "ID": "SAG-0428",
+    "Sango": "Terè ti ZO",
+    "Français": "Le corps humains",
+    "Anglais": "The human body",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0428_Terè_ti_ZO.mp3",
+    "Russe": "CHELOVEKA TELO"
+  },
+  {
+    "ID": "SAG-0429",
+    "Sango": "Biyo ti terè",
+    "Français": "Le squelette",
+    "Anglais": "The skeleton",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0429_Biyo_ti_terè.mp3",
+    "Russe": "Скелет"
+  },
+  {
+    "ID": "SAG-0430",
+    "Sango": "Kwa ti li",
+    "Français": "Les cheveux",
+    "Anglais": "Hair",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0430_Kwa_ti_li.mp3",
+    "Russe": "Волосы"
+  },
+  {
+    "ID": "SAG-0431",
+    "Sango": "Biyo ti li",
+    "Français": "Le crane",
+    "Anglais": "The skull",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0431_Biyo_ti_li.mp3",
+    "Russe": "Череп"
+  },
+  {
+    "ID": "SAG-0432",
+    "Sango": "Du ti lè",
+    "Français": "L'orbite",
+    "Anglais": "The orbit",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0432_Du_ti_lè.mp3",
+    "Russe": "Орбита"
+  },
+  {
+    "ID": "SAG-0433",
+    "Sango": "Ndo ti lè",
+    "Français": "Le front",
+    "Anglais": "The forehead",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0433_Ndo_ti_lè.mp3",
+    "Russe": "Спереди"
+  },
+  {
+    "ID": "SAG-0434",
+    "Sango": "Hon",
+    "Français": "Le nez",
+    "Anglais": "The nose",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0434_Hon.mp3",
+    "Russe": "Нос"
+  },
+  {
+    "ID": "SAG-0435",
+    "Sango": "Dù ti Hon",
+    "Français": "La narine",
+    "Anglais": "The nostril",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0435_Dù_ti_Hon.mp3",
+    "Russe": "Ноздря"
+  },
+  {
+    "ID": "SAG-0436",
+    "Sango": "Mè",
+    "Français": "L'oreille",
+    "Anglais": "The ear",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0436_Mè.mp3",
+    "Russe": "Ухо"
+  },
+  {
+    "ID": "SAG-0437",
+    "Sango": "Yàngà",
+    "Français": "La bouche",
+    "Anglais": "The mouth",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0437_Yàngà.mp3",
+    "Russe": "Рот"
+  },
+  {
+    "ID": "SAG-0438",
+    "Sango": "Gbé ti yàngà",
+    "Français": "Le menton",
+    "Anglais": "The chin",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0438_Gbé_ti_yàngà.mp3",
+    "Russe": "Подбородок"
+  },
+  {
+    "ID": "SAG-0439",
+    "Sango": "Kùà ti yanga",
+    "Français": "La barbe",
+    "Anglais": "The beard",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0439_Kùà_ti_yanga.mp3",
+    "Russe": "Борода"
+  },
+  {
+    "ID": "SAG-0440",
+    "Sango": "Ngbàngbà",
+    "Français": "La joue",
+    "Anglais": "The cheek",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0440_Ngbàngbà.mp3",
+    "Russe": "Щека"
+  },
+  {
+    "ID": "SAG-0441",
+    "Sango": "Biyo ti Ngbàngbà",
+    "Français": "La machoire",
+    "Anglais": "The jaw",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0441_Biyo_ti_Ngbàngbà.mp3",
+    "Russe": "Челюсть"
+  },
+  {
+    "ID": "SAG-0442",
+    "Sango": "Pèmbè",
+    "Français": "Les dents",
+    "Anglais": "Teeth",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0442_Pèmbè.mp3",
+    "Russe": "Зубы человека"
+  },
+  {
+    "ID": "SAG-0443",
+    "Sango": "Mengà",
+    "Français": "La langue",
+    "Anglais": "The language",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0443_Mengà.mp3",
+    "Russe": "Язык"
+  },
+  {
+    "ID": "SAG-0444",
+    "Sango": "Go",
+    "Français": "La voix/la gorge/ le cou",
+    "Anglais": "Voice/throat/neck",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0444_Go_.mp3",
+    "Russe": "Голос/горло/ шея"
+  },
+  {
+    "ID": "SAG-0445",
+    "Sango": "Biyo ti Go",
+    "Français": "Cervicale",
+    "Anglais": "Cervical",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0445_Biyo_ti_Go.mp3",
+    "Russe": "Шейные позвонки"
+  },
+  {
+    "ID": "SAG-0446",
+    "Sango": "Katé",
+    "Français": "La poitrine/ case thoracique",
+    "Anglais": "The chest/thoracic box",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0446_Katé.mp3",
+    "Russe": "Грудь/грудное отделение"
+  },
+  {
+    "ID": "SAG-0447",
+    "Sango": "Pika katé",
+    "Français": "Se frapper la poitrine de fièrtè",
+    "Anglais": "Beating your chest with pride",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0447_Pika_katé.mp3",
+    "Russe": "Ударьте друг друга по груди fièrtè"
+  },
+  {
+    "ID": "SAG-0448",
+    "Sango": "Mè",
+    "Français": "Les seins/ les mammelles",
+    "Anglais": "Breasts/udders",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0448_Mè.mp3",
+    "Russe": "Грудь/ млекопитающие"
+  },
+  {
+    "ID": "SAG-0449",
+    "Sango": "Maboko",
+    "Français": "Le bras/l'avant bras/",
+    "Anglais": "The arm/forearm/",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0449_Maboko.mp3",
+    "Russe": "Рука/предплечье/"
+  },
+  {
+    "ID": "SAG-0450",
+    "Sango": "Kete Maboko/ Nzina maboko",
+    "Français": "Les doigts",
+    "Anglais": "Fingers",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0450_Kete_Maboko-_Nzina_m.mp3",
+    "Russe": "Пальцы"
+  },
+  {
+    "ID": "SAG-0451",
+    "Sango": "Maboko ti koli/ Koti",
+    "Français": "Bras droigt",
+    "Anglais": "Right arm",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0451_Maboko_ti_koli-_Koti.mp3",
+    "Russe": "Рычаг Droigt"
+  },
+  {
+    "ID": "SAG-0452",
+    "Sango": "Maboko ti wali/ gàti",
+    "Français": "Bras gauche",
+    "Anglais": "Left arm",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0452_Maboko_ti_wali-_gàti.mp3",
+    "Russe": "Левая рука"
+  },
+  {
+    "ID": "SAG-0453",
+    "Sango": "Nzenè ti maboko",
+    "Français": "Les ongles de mains",
+    "Anglais": "Fingernails",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0453_Nzenè_ti_maboko.mp3",
+    "Russe": "Гвозди для рук"
+  },
+  {
+    "ID": "SAG-0454",
+    "Sango": "Nzenè ti gere",
+    "Français": "Les ongles de pied",
+    "Anglais": "Toenails",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0454_Nzenè_ti_gere.mp3",
+    "Russe": "Ногти на ногах"
+  },
+  {
+    "ID": "SAG-0455",
+    "Sango": "biyo ti maboko",
+    "Français": "Le cubitus/ il faut remplacer par le nom des os de tous l'avant bras",
+    "Anglais": "The ulna/ it must be replaced by the name of the bones of all the forearm",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0455_biyo_ti_maboko.mp3",
+    "Russe": "Локтевая кость/ должна быть заменена названием костей всего предплечья"
+  },
+  {
+    "ID": "SAG-0456",
+    "Sango": "Peko",
+    "Français": "Le dos",
+    "Anglais": "The back",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0456_Peko.mp3",
+    "Russe": "Задняя часть"
+  },
+  {
+    "ID": "SAG-0457",
+    "Sango": "Ya",
+    "Français": "Le ventre",
+    "Anglais": "The stomach",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0457_Ya.mp3",
+    "Russe": "Живот"
+  },
+  {
+    "ID": "SAG-0458",
+    "Sango": "Gbé ti yà",
+    "Français": "Le bas ventre",
+    "Anglais": "The lower abdomen",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0458_Gbé_ti_yà.mp3",
+    "Russe": "Нижняя часть живота"
+  },
+  {
+    "ID": "SAG-0459",
+    "Sango": "Kundù",
+    "Français": "L'estomac",
+    "Anglais": "The stomach",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0459_Kundù.mp3",
+    "Russe": "Желудок"
+  },
+  {
+    "ID": "SAG-0460",
+    "Sango": "Bè",
+    "Français": "Le cœur",
+    "Anglais": "The heart",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0460_Bè.mp3",
+    "Russe": "Сердце"
+  },
+  {
+    "ID": "SAG-0461",
+    "Sango": "Fufù",
+    "Français": "Les poumons",
+    "Anglais": "The lungs",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0461_Fufù.mp3",
+    "Russe": "Легкие"
+  },
+  {
+    "ID": "SAG-0462",
+    "Sango": "Kota kàmba ti yà",
+    "Français": "Gros intestin",
+    "Anglais": "Large intestine",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0462_Kota_kàmba_ti_yà.mp3",
+    "Russe": "KISHECHNIK TOLSTYI"
+  },
+  {
+    "ID": "SAG-0463",
+    "Sango": "kete kàmba ti yà",
+    "Français": "L'intestin grele",
+    "Anglais": "The small intestine",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0463_kete_kàmba_ti_yà.mp3",
+    "Russe": "Серый кишечник"
+  },
+  {
+    "ID": "SAG-0464",
+    "Sango": "Tùrùmbù",
+    "Français": "Le nombril",
+    "Anglais": "The navel",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0464_Tùrùmbù.mp3",
+    "Russe": "Пупок"
+  },
+  {
+    "ID": "SAG-0465",
+    "Sango": "Ngbondà",
+    "Français": "Les fesses",
+    "Anglais": "The buttocks",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0465_Ngbondà.mp3",
+    "Russe": "Ягодицы"
+  },
+  {
+    "ID": "SAG-0466",
+    "Sango": "Dù ti ngondà",
+    "Français": "L'anus",
+    "Anglais": "The anus",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0466_Dù_ti_ngondà.mp3",
+    "Russe": "Анус"
+  },
+  {
+    "ID": "SAG-0467",
+    "Sango": "Dondo",
+    "Français": "Le sexe féminin",
+    "Anglais": "The female gender",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0467_Dondo.mp3",
+    "Russe": "женского"
+  },
+  {
+    "ID": "SAG-0468",
+    "Sango": "kèngè",
+    "Français": "Le penis",
+    "Anglais": "The penis",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0468_kèngè.mp3",
+    "Russe": "Пенис"
+  },
+  {
+    "ID": "SAG-0469",
+    "Sango": "korobo",
+    "Français": "Les testicules",
+    "Anglais": "The testicles",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0469_korobo.mp3",
+    "Russe": "Яички"
+  },
+  {
+    "ID": "SAG-0470",
+    "Sango": "Kètè gerè/ nzina gerè",
+    "Français": "Les orteilles",
+    "Anglais": "Toes",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0470_Kètè_gerè-_nzina_ger.mp3",
+    "Russe": "Пальцы ног"
+  },
+  {
+    "ID": "SAG-0471",
+    "Sango": "Biyo ti gerè",
+    "Français": "Le fémur/ tibia",
+    "Anglais": "The femur/tibia",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0471_Biyo_ti_gerè.mp3",
+    "Russe": "Бедренная кость/ большеберцовая кость"
+  },
+  {
+    "ID": "SAG-0472",
+    "Sango": "nda gerè",
+    "Français": "Le talon",
+    "Anglais": "The heel",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0472_nda_gerè.mp3",
+    "Russe": "Каблук"
+  },
+  {
+    "ID": "SAG-0473",
+    "Sango": "gerè ti koli",
+    "Français": "Le pied droit",
+    "Anglais": "The right foot",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0473_gerè_ti_koli.mp3",
+    "Russe": "Правая нога"
+  },
+  {
+    "ID": "SAG-0474",
+    "Sango": "gerè ti wali",
+    "Français": "Le pied gauche",
+    "Anglais": "The left foot",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0474_gerè_ti_wali.mp3",
+    "Russe": "Левая нога"
+  },
+  {
+    "ID": "SAG-0475",
+    "Sango": "likuni",
+    "Français": "Genou",
+    "Anglais": "Knee",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0475_likuni.mp3",
+    "Russe": "Коленный сустав"
+  },
+  {
+    "ID": "SAG-0476",
+    "Sango": "Biyo ti likuni",
+    "Français": "La rotule",
+    "Anglais": "The kneecap",
+    "Catégorie": "Général",
+    "Piste Audio": "Piste 5",
+    "Fichier Audio": "SAG-0476_Biyo_ti_likuni.mp3",
+    "Russe": "Коленная чашечка"
+  }
+]
