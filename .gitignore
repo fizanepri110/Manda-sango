@@ -36,3 +36,9 @@ Thumbs.db
 
 # Misc
 *.zip
+
+# Heavy/local assets and tool folders (kept locally, not in the repo)
+public/audio/
+.claude/
+.antigravitycli/
+*.xlsx
