@@ -401,74 +401,6 @@ function Header({ userState, currentLang, setLang, goHome }: any) {
   );
 }
 
-// TEMPORARY DEBUG PANEL — lists every speech-synthesis voice the browser has.
-// Waits for the asynchronous "voiceschanged" event before listing.
-// Remove this component (and its use in renderHomeScreen) once debugging is done.
-function VoiceDebugPanel() {
-  const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
-  const [supported, setSupported] = useState(true);
-
-  useEffect(() => {
-    if (!('speechSynthesis' in window)) {
-      setSupported(false);
-      return;
-    }
-    const synth = window.speechSynthesis;
-    const load = () => setVoices(synth.getVoices());
-    load(); // try immediately (sometimes already loaded)
-    synth.addEventListener('voiceschanged', load); // and wait for async load
-    return () => synth.removeEventListener('voiceschanged', load);
-  }, []);
-
-  const russianVoices = voices.filter(v => v.lang.toLowerCase().startsWith('ru'));
-
-  return (
-    <div className="max-w-2xl mx-auto mt-12 p-4 border-2 border-dashed border-amber-400 bg-amber-50 rounded-lg text-left">
-      <h3 className="font-bold text-amber-800 mb-2">🔧 DEBUG voix (temporaire)</h3>
-
-      {!supported && (
-        <p className="text-red-600 font-semibold">
-          Ce navigateur ne supporte pas la synthèse vocale (speechSynthesis).
-        </p>
-      )}
-
-      {supported && (
-        <>
-          <p className="mb-2 text-sm">
-            <strong>Voix russes détectées (lang commence par « ru ») : </strong>
-            {russianVoices.length === 0 ? (
-              <span className="text-red-600 font-bold">AUCUNE ❌</span>
-            ) : (
-              <span className="text-green-700 font-bold">
-                {russianVoices.length} ✅ — {russianVoices.map(v => `${v.name} (${v.lang})`).join(', ')}
-              </span>
-            )}
-          </p>
-          <p className="text-sm text-slate-600 mb-2">
-            Total voix chargées : <strong>{voices.length}</strong>
-            {voices.length === 0 && ' (liste encore vide — attends quelques secondes / recharge la page)'}
-          </p>
-          <details>
-            <summary className="cursor-pointer text-sm text-amber-800 font-semibold">
-              Voir toutes les voix ({voices.length})
-            </summary>
-            <ul className="mt-2 max-h-64 overflow-auto text-xs font-mono">
-              {voices.map((v, i) => (
-                <li
-                  key={i}
-                  className={v.lang.toLowerCase().startsWith('ru') ? 'text-green-700 font-bold' : ''}
-                >
-                  {v.lang} — {v.name}
-                </li>
-              ))}
-            </ul>
-          </details>
-        </>
-      )}
-    </div>
-  );
-}
-
 // ===================== SECTION FIERTÉ NATIONALE =====================
 // Contenu vérifié (sources : Wikipédia, Ordre de la Libération, présidence RCA).
 // Tout est écrit en dur ici — la base Supabase n'est pas concernée.
@@ -824,8 +756,6 @@ function App() {
             </div>
           ))}
         </div>
-
-        <VoiceDebugPanel />
       </div>
     );
   };
