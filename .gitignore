@@ -42,3 +42,6 @@ public/audio/
 .claude/
 .antigravitycli/
 *.xlsx
+
+# Vercel local project link
+.vercel

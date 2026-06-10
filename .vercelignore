@@ -1,0 +1,12 @@
+# Heavy/local files not needed for the deployed app (audio is served from Supabase Storage)
+public/audio
+*.wav
+*.mp3
+*.xlsx
+db_reference.json
+db_translated.json
+*.cjs
+.antigravitycli
+.claude
+node_modules
+dist
